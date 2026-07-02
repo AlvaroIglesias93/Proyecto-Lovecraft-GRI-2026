@@ -1,0 +1,460 @@
+{
+  "pool_cartas": {
+    "guardia": [
+      {
+        "id": "gua_1",
+        "nombre": "Escudo Antidisturbios",
+        "coste": 1,
+        "descripcion": "Suma 12 de Bloqueo Corporal.",
+        "imagen": "assets/img/cards/gua_escudo.png",
+        "efecto": { "tipo": "bloqueo", "valor": 12 }
+      },
+      {
+        "id": "gua_2",
+        "nombre": "Porrazo de Contención",
+        "coste": 1,
+        "descripcion": "Inflige 8 de daño a la Manifestación.",
+        "imagen": "assets/img/cards/gua_porra.png",
+        "efecto": { "tipo": "daño_crisis", "valor": 8 }
+      },
+      {
+        "id": "gua_3",
+        "nombre": "Gas Pimienta",
+        "coste": 2,
+        "descripcion": "Inflige 10 de daño y reduce ATK de la crisis en 3.",
+        "imagen": "assets/img/cards/gua_gas.png",
+        "efecto": { "tipo": "daño_y_debuff", "daño": 10, "debuff": 3, "duracion": 2 }
+      },
+      {
+        "id": "gua_4",
+        "nombre": "Paso Firme",
+        "coste": 1,
+        "descripcion": "Inflige 6 de daño y roba 1 carta.",
+        "imagen": "assets/img/cards/gua_paso.png",
+        "efecto": { "tipo": "daño_y_robo", "daño": 6, "robo": 1 }
+      },
+      {
+        "id": "gua_5",
+        "nombre": "Cerrar Compuerta Cortafuegos",
+        "coste": 3,
+        "descripcion": "Gana 26 de Bloqueo Absoluto.",
+        "imagen": "assets/img/cards/gua_compuerta.png",
+        "efecto": { "tipo": "bloqueo", "valor": 26 }
+      },
+      {
+        "id": "gua_6",
+        "nombre": "Llamada por Radio",
+        "coste": 1,
+        "descripcion": "Roba 2 cartas de táctica de escolta.",
+        "imagen": "assets/img/cards/gua_radio.png",
+        "efecto": { "tipo": "robar_cartas", "valor": 2 }
+      },
+      {
+        "id": "gua_7",
+        "nombre": "Foco Deslumbrante",
+        "coste": 0,
+        "descripcion": "Reduce el ataque enemigo en 2.",
+        "imagen": "assets/img/cards/gua_foco.png",
+        "efecto": { "tipo": "reducir_ataque", "valor": 2, "duracion": 1 }
+      },
+      {
+        "id": "gua_8",
+        "nombre": "Tacleada Física",
+        "coste": 2,
+        "descripcion": "Inflige 14 de daño a la manifestación.",
+        "imagen": "assets/img/cards/gua_tacleada.png",
+        "efecto": { "tipo": "daño_crisis", "valor": 14 }
+      },
+      {
+        "id": "gua_9",
+        "nombre": "Adrenalina de Supervivencia",
+        "coste": 0,
+        "descripcion": "Gana 5 de Bloqueo y roba 1 carta.",
+        "imagen": "assets/img/cards/gua_adrenalina.png",
+        "efecto": { "tipo": "robo_y_block", "robo": 1, "block": 5 }
+      },
+      {
+        "id": "gua_10",
+        "nombre": "Sujetar Grilletes",
+        "coste": 2,
+        "descripcion": "Reduce el ATK de la crisis en 5 y gana 6 de escudo.",
+        "imagen": "assets/img/cards/gua_grilletes.png",
+        "efecto": { "tipo": "debuff_y_block", "debuff": 5, "block": 6, "duracion": 2 }
+      },
+      {
+        "id": "gua_11",
+        "nombre": "Munición de Fogueo",
+        "coste": 1,
+        "descripcion": "Inflige 9 de daño por impacto sónico.",
+        "imagen": "assets/img/cards/gua_fogueo.png",
+        "efecto": { "tipo": "daño_crisis", "valor": 9 }
+      },
+      {
+        "id": "gua_12",
+        "nombre": "Blindaje de Kevlar",
+        "coste": 1,
+        "descripcion": "Aumenta la defensa en 10.",
+        "imagen": "assets/img/cards/gua_kevlar.png",
+        "efecto": { "tipo": "bloqueo", "valor": 10 }
+      },
+      {
+        "id": "gua_13",
+        "nombre": "Último Recurso",
+        "coste": 3,
+        "descripcion": "Inflige 22 de daño contundente.",
+        "imagen": "assets/img/cards/gua_recurso.png",
+        "efecto": { "tipo": "daño_crisis", "valor": 22 }
+      },
+      {
+        "id": "gua_14",
+        "nombre": "Inspección de Ruta",
+        "coste": 1,
+        "descripcion": "Roba 3 cartas del mazo.",
+        "imagen": "assets/img/cards/gua_ruta.png",
+        "efecto": { "tipo": "robar_cartas", "valor": 3 }
+      }
+    ],
+    "enfermero": [
+      {
+        "id": "enf_1",
+        "nombre": "Inyección Haloperidol",
+        "coste": 1,
+        "descripcion": "Mitiga tu Estrés Clínico en 12.",
+        "imagen": "assets/img/cards/enf_haloperidol.png",
+        "efecto": { "tipo": "reducir_medidor", "valor": 12 }
+      },
+      {
+        "id": "enf_2",
+        "nombre": "Camisa de Fuerza Hidráulica",
+        "coste": 2,
+        "descripcion": "Reduce a 0 el ATK enemigo este turno.",
+        "imagen": "assets/img/cards/enf_camisa.png",
+        "efecto": { "tipo": "reducir_ataque", "valor": 99, "duracion": 1 }
+      },
+      {
+        "id": "enf_3",
+        "nombre": "Monitoreo Clínico",
+        "coste": 1,
+        "descripcion": "Gana 10 de Escudo Médico.",
+        "imagen": "assets/img/cards/enf_monitoreo.png",
+        "efecto": { "tipo": "bloqueo", "valor": 10 }
+      },
+      {
+        "id": "enf_4",
+        "nombre": "Dosis Combinada",
+        "coste": 2,
+        "descripcion": "Reduce el estrés en 8 y roba 2 cartas.",
+        "imagen": "assets/img/cards/enf_dosis.png",
+        "efecto": { "tipo": "cura_y_robo", "cura": 8, "robo": 2 }
+      },
+      {
+        "id": "enf_5",
+        "nombre": "Terapia Ocupacional",
+        "coste": 1,
+        "descripcion": "Sana 6 de estrés e inflige 5 de daño a la crisis.",
+        "imagen": "assets/img/cards/enf_ocupacional.png",
+        "efecto": { "tipo": "daño_y_cura", "daño": 5, "cura": 6 }
+      },
+      {
+        "id": "enf_6",
+        "nombre": "Palabras Anodinas",
+        "coste": 0,
+        "descripcion": "Reduce tu estrés clínico en 5.",
+        "imagen": "assets/img/cards/enf_palabras.png",
+        "efecto": { "tipo": "reducir_medidor", "valor": 5 }
+      },
+      {
+        "id": "enf_7",
+        "nombre": "Sedación de Emergencia",
+        "coste": 2,
+        "descripcion": "Inflige 14 de daño químico a la crisis.",
+        "imagen": "assets/img/cards/enf_sedacion.png",
+        "efecto": { "tipo": "daño_crisis", "valor": 14 }
+      },
+      {
+        "id": "enf_8",
+        "nombre": "Aislamiento Acolchado",
+        "coste": 3,
+        "descripcion": "Gana 24 de bloqueo mental.",
+        "imagen": "assets/img/cards/enf_aislamiento.png",
+        "efecto": { "tipo": "bloqueo", "valor": 24 }
+      },
+      {
+        "id": "enf_9",
+        "nombre": "Infusión Calmante",
+        "coste": 1,
+        "descripcion": "Gana 6 de barrera y reduce estrés en 6.",
+        "imagen": "assets/img/cards/enf_infusion.png",
+        "efecto": { "tipo": "cura_y_block", "cura": 6, "block": 6 }
+      },
+      {
+        "id": "enf_10",
+        "nombre": "Hidroterapia Gélida",
+        "coste": 2,
+        "descripcion": "Inflige 12 de daño e inflige 3 de debuff al ATK.",
+        "imagen": "assets/img/cards/enf_hidro.png",
+        "efecto": { "tipo": "daño_y_debuff", "daño": 12, "debuff": 3, "duracion": 2 }
+      },
+      {
+        "id": "enf_11",
+        "nombre": "Revisión de Constantes",
+        "coste": 1,
+        "descripcion": "Roba 2 cartas del dispensario.",
+        "imagen": "assets/img/cards/enf_revision.png",
+        "efecto": { "tipo": "robar_cartas", "valor": 2 }
+      },
+      {
+        "id": "enf_12",
+        "nombre": "Restricción Manual",
+        "coste": 1,
+        "descripcion": "Inflige 6 de daño y suma 5 de escudo.",
+        "imagen": "assets/img/cards/enf_restriccion.png",
+        "efecto": { "tipo": "daño_y_block", "daño": 6, "block": 5 }
+      },
+      {
+        "id": "enf_13",
+        "nombre": "Placebo Sugestivo",
+        "coste": 0,
+        "descripcion": "Reduce estrés en 4 puntos sin coste.",
+        "imagen": "assets/img/cards/enf_placebo.png",
+        "efecto": { "tipo": "reducir_medidor", "valor": 4 }
+      },
+      {
+        "id": "enf_14",
+        "nombre": "Cóctel Lítico Masivo",
+        "coste": 3,
+        "descripcion": "Sana 15 de estrés e inflige 15 de daño.",
+        "imagen": "assets/img/cards/enf_coctel.png",
+        "efecto": { "tipo": "daño_y_cura", "daño": 15, "cura": 15 }
+      }
+    ],
+    "doctor": [
+      {
+        "id": "doc_1",
+        "nombre": "Psicoanálisis Clínico",
+        "coste": 1,
+        "descripcion": "Aumenta la estabilidad del paciente en 12.",
+        "imagen": "assets/img/cards/doc_psico.png",
+        "efecto": { "tipo": "sanar_medidor", "valor": 12 }
+      },
+      {
+        "id": "doc_2",
+        "nombre": "Terapia Convectiva",
+        "coste": 2,
+        "descripcion": "Sana 28 de medidor pero daña 6 de estabilidad propia.",
+        "imagen": "assets/img/cards/doc_convectiva.png",
+        "efecto": { "tipo": "sanar_medidor_con_contraefecto", "valor": 28, "daño_propio": 6 }
+      },
+      {
+        "id": "doc_3",
+        "nombre": "Discurso Lógico",
+        "coste": 1,
+        "descripcion": "Inflige 9 de daño a la resistencia del delirio.",
+        "imagen": "assets/img/cards/doc_discurso.png",
+        "efecto": { "tipo": "daño_crisis", "valor": 9 }
+      },
+      {
+        "id": "doc_4",
+        "nombre": "Catarsis Catatónica",
+        "coste": 3,
+        "descripcion": "Inflige 22 de daño y sana 14 el medidor.",
+        "imagen": "assets/img/cards/doc_catarsis.png",
+        "efecto": { "tipo": "daño_y_cura", "daño": 22, "cura": 14 }
+      },
+      {
+        "id": "doc_5",
+        "nombre": "Hipnosis Regresiva",
+        "coste": 1,
+        "descripcion": "Roba 2 cartas de terapia.",
+        "imagen": "assets/img/cards/doc_hipnosis.png",
+        "efecto": { "tipo": "robar_cartas", "valor": 2 }
+      },
+      {
+        "id": "doc_6",
+        "nombre": "Diagnóstico Diferencial",
+        "coste": 1,
+        "descripcion": "Inflige 6 de daño y roba 1 carta.",
+        "imagen": "assets/img/cards/doc_diagnostico.png",
+        "efecto": { "tipo": "daño_y_robo", "daño": 6, "robo": 1 }
+      },
+      {
+        "id": "doc_7",
+        "nombre": "Bloqueo Racional",
+        "coste": 1,
+        "descripcion": "Añade 11 de protección intelectual.",
+        "imagen": "assets/img/cards/doc_bloqueo.png",
+        "efecto": { "tipo": "bloqueo", "valor": 11 }
+      },
+      {
+        "id": "doc_8",
+        "nombre": "Supresión del Trauma",
+        "coste": 2,
+        "descripcion": "Reduce el ataque de la crisis en 5 puntos.",
+        "imagen": "assets/img/cards/doc_supresion.png",
+        "efecto": { "tipo": "reducir_ataque", "valor": 5, "duracion": 2 }
+      },
+      {
+        "id": "doc_9",
+        "nombre": "Sugerencia Subliminal",
+        "coste": 0,
+        "descripcion": "Aumenta la estabilidad en 4 unidades.",
+        "imagen": "assets/img/cards/doc_sugerencia.png",
+        "efecto": { "tipo": "sanar_medidor", "valor": 4 }
+      },
+      {
+        "id": "doc_10",
+        "nombre": "Internamiento Prolongado",
+        "coste": 3,
+        "descripcion": "Otorga 25 de blindaje clínico.",
+        "imagen": "assets/img/cards/doc_internamiento.png",
+        "efecto": { "tipo": "bloqueo", "valor": 25 }
+      },
+      {
+        "id": "doc_11",
+        "nombre": "Tratado de Arkham",
+        "coste": 1,
+        "descripcion": "Roba 3 cartas del mazo.",
+        "imagen": "assets/img/cards/doc_tratado.png",
+        "efecto": { "tipo": "robar_cartas", "valor": 3 }
+      },
+      {
+        "id": "doc_12",
+        "nombre": "Estudio del Expediente",
+        "coste": 1,
+        "descripcion": "Inflige 5 de daño y levanta 6 de escudo.",
+        "imagen": "assets/img/cards/doc_estudio.png",
+        "efecto": { "tipo": "daño_y_block", "daño": 5, "block": 6 }
+      },
+      {
+        "id": "doc_13",
+        "nombre": "Derivación Farmacológica",
+        "coste": 2,
+        "descripcion": "Inflige 16 de daño directo al núcleo.",
+        "imagen": "assets/img/cards/doc_derivacion.png",
+        "efecto": { "tipo": "daño_crisis", "valor": 16 }
+      },
+      {
+        "id": "doc_14",
+        "nombre": "Reconstrucción Cognitiva",
+        "coste": 2,
+        "descripcion": "Sana 14 el medidor y da 5 de escudo.",
+        "imagen": "assets/img/cards/doc_reconstruccion.png",
+        "efecto": { "tipo": "cura_y_block", "cura": 14, "block": 5 }
+      }
+    ],
+    "alumno": [
+      {
+        "id": "alu_1",
+        "nombre": "Notas de Campo",
+        "coste": 1,
+        "descripcion": "Roba 2 cartas académicas.",
+        "imagen": "assets/img/cards/alu_notas.png",
+        "efecto": { "tipo": "robar_cartas", "valor": 2 }
+      },
+      {
+        "id": "alu_2",
+        "nombre": "Esquivar la Mirada",
+        "coste": 1,
+        "descripcion": "Añade 9 de protección psicológica.",
+        "imagen": "assets/img/cards/alu_esquivar.png",
+        "efecto": { "tipo": "bloqueo", "valor": 9 }
+      },
+      {
+        "id": "alu_3",
+        "nombre": "Pregunta Inoportuna",
+        "coste": 1,
+        "descripcion": "Provoca 8 de daño a la tensión ambiental.",
+        "imagen": "assets/img/cards/alu_pregunta.png",
+        "efecto": { "tipo": "daño_crisis", "valor": 8 }
+      },
+      {
+        "id": "alu_4",
+        "nombre": "Lectura del Necronomicon",
+        "coste": 2,
+        "descripcion": "Roba 3 cartas pero pierdes 5 de cordura.",
+        "imagen": "assets/img/cards/alu_lectura.png",
+        "efecto": { "tipo": "robo_con_daño", "robo": 3, "daño": 5 }
+      },
+      {
+        "id": "alu_5",
+        "nombre": "Mantener Distancia",
+        "coste": 1,
+        "descripcion": "Reduce el ataque de la crisis en 3.",
+        "imagen": "assets/img/cards/alu_distancia.png",
+        "efecto": { "tipo": "reducir_ataque", "valor": 3, "duracion": 1 }
+      },
+      {
+        "id": "alu_6",
+        "nombre": "Café de Cafetería",
+        "coste": 0,
+        "descripcion": "Roba 1 carta sin coste de energía.",
+        "imagen": "assets/img/cards/alu_cafe.png",
+        "efecto": { "tipo": "robar_cartas", "valor": 1 }
+      },
+      {
+        "id": "alu_7",
+        "nombre": "Análisis Conductual",
+        "coste": 2,
+        "descripcion": "Sana 15 tu cordura personal.",
+        "imagen": "assets/img/cards/alu_analisis.png",
+        "efecto": { "tipo": "sanar_medidor", "valor": 16 }
+      },
+      {
+        "id": "alu_8",
+        "nombre": "Espejo de Observación",
+        "coste": 1,
+        "descripcion": "Gana 6 de escudo y roba 1 carta.",
+        "imagen": "assets/img/cards/alu_espejo.png",
+        "efecto": { "tipo": "robo_y_block", "robo": 1, "block": 6 }
+      },
+      {
+        "id": "alu_9",
+        "nombre": "Teoría Estudiantil",
+        "coste": 2,
+        "descripcion": "Inflige 15 de daño analítico.",
+        "imagen": "assets/img/cards/alu_teoria.png",
+        "efecto": { "tipo": "daño_crisis", "valor": 15 }
+      },
+      {
+        "id": "alu_10",
+        "nombre": "Anotación de Síntomas",
+        "coste": 1,
+        "descripcion": "Inflige 6 de daño y reduce el ATK en 2.",
+        "imagen": "assets/img/cards/alu_anotacion.png",
+        "efecto": { "tipo": "daño_y_debuff", "daño": 6, "debuff": 2, "duracion": 1 }
+      },
+      {
+        "id": "alu_11",
+        "nombre": "Buscar Ayuda del Tutor",
+        "coste": 3,
+        "descripcion": "Gana 22 de protección mental.",
+        "imagen": "assets/img/cards/alu_tutor.png",
+        "efecto": { "tipo": "bloqueo", "valor": 22 }
+      },
+      {
+        "id": "alu_12",
+        "nombre": "Lógica Científica",
+        "coste": 1,
+        "descripcion": "Sana 8 de cordura y da 4 de escudo.",
+        "imagen": "assets/img/cards/alu_logica.png",
+        "efecto": { "tipo": "cura_y_block", "cura": 8, "block": 4 }
+      },
+      {
+        "id": "alu_13",
+        "nombre": "Intuición Repentina",
+        "coste": 0,
+        "descripcion": "Inflige 4 de daño inmediato.",
+        "imagen": "assets/img/cards/alu_intuicion.png",
+        "efecto": { "tipo": "daño_crisis", "valor": 4 }
+      },
+      {
+        "id": "alu_14",
+        "nombre": "Proyecto Fin de Grado",
+        "coste": 3,
+        "descripcion": "Inflige 24 de daño a la crisis.",
+        "imagen": "assets/img/cards/alu_proyecto.png",
+        "efecto": { "tipo": "daño_crisis", "valor": 24 }
+      }
+    ]
+  }
+}

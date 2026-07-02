@@ -1,0 +1,76 @@
+{
+  "personajes_jugables": [
+    {
+      "id": "guardia",
+      "rol": "Guardia de Seguridad",
+      "medidor": "Aguante Físico",
+      "escenario_fondo": "assets/img/backgrounds/ground_guard.jpeg",
+      "variantes": {
+        "m": {
+          "nombre": "Edgar Vance",
+          "intro": "Traslado de pabellón. Los pasillos crujen con geometrías imposibles.",
+          "retrato": "assets/img/characters/guardia1.png"
+        },
+        "f": {
+          "nombre": "Rebecca Cole",
+          "intro": "Vigilancia nocturna. Algo arrastra sus garras por el techo.",
+          "retrato": "assets/img/characters/guardia2.png"
+        }
+      }
+    },
+    {
+      "id": "enfermero",
+      "rol": "Enfermero/a",
+      "medidor": "Estrés Clínico",
+      "escenario_fondo": "assets/img/backgrounds/ground_enf.jpeg",
+      "variantes": {
+        "m": {
+          "nombre": "Walter Bishop",
+          "intro": "Preparando la dosis. El paciente muestra signos de hibridación profunda.",
+          "retrato": "assets/img/characters/interino.png"
+        },
+        "f": {
+          "nombre": "Miriam Crowe",
+          "intro": "Administración de sedantes. Las pupilas reflejan constelaciones muertas.",
+          "retrato": "assets/img/characters/interina.png"
+        }
+      }
+    },
+    {
+      "id": "doctor",
+      "rol": "Doctor/a",
+      "medidor": "Resistencia del Doctor",
+      "escenario_fondo": "assets/img/backgrounds/ground_doc.jpeg",
+      "variantes": {
+        "m": {
+          "nombre": "Alistair Blackwood",
+          "intro": "Sesión de hipnosis profunda. Buscando el núcleo del delirio cósmico.",
+          "retrato": "assets/img/characters/medico.png"
+        },
+        "f": {
+          "nombre": "Priscilla Dunwich",
+          "intro": "Análisis analítico. El paciente transcribe el alfabeto Aklo de memoria.",
+          "retrato": "assets/img/characters/medica.png"
+        }
+      }
+    },
+    {
+      "id": "alumno",
+      "rol": "Alumno/a en Prácticas",
+      "medidor": "Cordura Propia",
+      "escenario_fondo": "assets/img/backgrounds/ground_student.jpeg",
+      "variantes": {
+        "m": {
+          "nombre": "Cedric Holloway",
+          "intro": "Evaluación pasiva. Mi cuaderno es el único escudo contra las verdades del doctor.",
+          "retrato": "assets/img/characters/alumno.png"
+        },
+        "f": {
+          "nombre": "Dorothea Harrow",
+          "intro": "Observación clínica. Anoto los espasmos del sujeto mientras el vacío me mira.",
+          "retrato": "assets/img/characters/alumna.png"
+        }
+      }
+    }
+  ]
+}

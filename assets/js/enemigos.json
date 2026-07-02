@@ -1,0 +1,150 @@
+{
+  "configuracion_global": {
+    "reverso_carta_enemiga": "assets/img/cards/reverse.png"
+  },
+  "banco_pacientes": {
+    "nombres_masculinos": ["Barnabas", "Obed", "Zadok", "Charles", "Crawford"],
+    "nombres_femeninos": ["Lavinia", "Asenath", "Keziah", "Mehitable", "Dorothy"],
+    "apellidos": ["Marsh", "Whateley", "Gilman", "Olmstead", "Derleth", "Pickman"],
+    "retratos": {
+      "masculinos": [
+        "assets/img/characters/paciente_m1.png",
+        "assets/img/characters/paciente_m2.png",
+        "assets/img/characters/paciente_m3.png",
+        "assets/img/characters/paciente_m4.png",
+        "assets/img/characters/paciente_m5.png"
+      ],
+      "femeninos": [
+        "assets/img/characters/paciente_f1.png",
+        "assets/img/characters/paciente_f2.png",
+        "assets/img/characters/paciente_f3.png",
+        "assets/img/characters/paciente_f4.png",
+        "assets/img/characters/paciente_f5.png"
+      ]
+    }
+  },
+  "patologias_enemigas": [
+    {
+      "id": "delirio_sombras",
+      "nombre_crisis": "Hibridación de Innsmouth",
+      "vida_base": 45,
+      "ataque_base": 6,
+      "descripcion": "El paciente manifiesta pánico al agua dulce y malformaciones branquiales corporales.",
+      "mazo_enemigo": [
+        {
+          "nombre": "Llamado de Dagon",
+          "daño": 8,
+          "descripcion": "Un eco húmedo retumba en el pabellón."
+        },
+        {
+          "nombre": "Mirada Fija del Pez",
+          "daño": 5,
+          "descripcion": "Parálisis inducida por ojos sin párpados."
+        },
+        {
+          "nombre": "Piel Escamosa",
+          "daño": 0,
+          "escudo": 8,
+          "descripcion": "La locura repele la lógica médica."
+        }
+      ]
+    },
+    {
+      "id": "paranoia_acechador",
+      "nombre_crisis": "Susurros de Mi-Go",
+      "vida_base": 60,
+      "ataque_base": 8,
+      "descripcion": "Afirma que entidades fungis de Yuggoth extraen cerebros en cilindros de metal.",
+      "mazo_enemigo": [
+        {
+          "nombre": "Zumbido Quirúrgico",
+          "daño": 10,
+          "descripcion": "Frecuencias alienígenas en la corteza cerebral."
+        },
+        {
+          "nombre": "Cilindro Protector",
+          "daño": 0,
+          "escudo": 12,
+          "descripcion": "Aislamiento hermético de la realidad."
+        }
+      ]
+    },
+    {
+      "id": "marca_arkham",
+      "nombre_crisis": "Marca de Arkham",
+      "vida_base": 50,
+      "ataque_base": 7,
+      "descripcion": "El paciente presenta marcas rituales en la piel y murmura pactos con entidades que habitan en los ángulos muertos de la habitación.",
+      "mazo_enemigo": [
+        {
+          "nombre": "Susurro de Brown Jenkin",
+          "daño": 7,
+          "descripcion": "Roce de garras invisibles bajo la cama."
+        },
+        {
+          "nombre": "Geometría Bruja",
+          "daño": 5,
+          "escudo": 6,
+          "descripcion": "Los muros se pliegan en ángulos imposibles."
+        },
+        {
+          "nombre": "Pacto de Sangre",
+          "daño": 9,
+          "descripcion": "El tinte carmesí del otro lado se filtra por las rendijas."
+        }
+      ]
+    },
+    {
+      "id": "color_devorador",
+      "nombre_crisis": "Color Devorador",
+      "vida_base": 55,
+      "ataque_base": 5,
+      "descripcion": "El paciente emite un fulgor cromático inexistente en el espectro visible. La materia orgánica se marchita a su alrededor.",
+      "mazo_enemigo": [
+        {
+          "nombre": "Resplandor Tóxico",
+          "daño": 6,
+          "escudo": 4,
+          "descripcion": "Una luz púrpura drena la vitalidad del entorno."
+        },
+        {
+          "nombre": "Putrefacción Cromática",
+          "daño": 8,
+          "descripcion": "Los colores se invierten y la carne se deslustra."
+        },
+        {
+          "nombre": "Drenaje Vital",
+          "daño": 4,
+          "escudo": 8,
+          "descripcion": "La energía del sanatorio es succionada por el color."
+        }
+      ]
+    },
+    {
+      "id": "herejia_dunwich",
+      "nombre_crisis": "Herejía de Dunwich",
+      "vida_base": 70,
+      "ataque_base": 9,
+      "descripcion": "El paciente no parece del todo humano. Su cuerpo se desdibuja en las sombras y emite un bramido que distorsiona el aire.",
+      "mazo_enemigo": [
+        {
+          "nombre": "Bramido Invisible",
+          "daño": 12,
+          "descripcion": "Una onda de choque etérea sacude los cimientos."
+        },
+        {
+          "nombre": "Presencia Oculta",
+          "daño": 0,
+          "escudo": 15,
+          "descripcion": "Algo enorme e invisible respira en la sala."
+        },
+        {
+          "nombre": "Azote del Valle",
+          "daño": 8,
+          "escudo": 5,
+          "descripcion": "El aire se vuelve denso y corrosivo."
+        }
+      ]
+    }
+  ]
+}

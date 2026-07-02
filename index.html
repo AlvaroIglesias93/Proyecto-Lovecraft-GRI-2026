@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-select=none"
+    />
+    <title>Eldrich Asylum - Sanatorium Core</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <div id="game-container">
+      <section id="main-menu" class="screen active">
+        <div class="menu-content">
+          <h1 class="menu-title">Eldritch Sanatorium</h1>
+          <p class="menu-subtitle">Archivos Clínicos del Horror Cósmico</p>
+          <div class="menu-divider"></div>
+          <p class="menu-description">
+            Arkham, Massachusetts — 1928.<br>
+            El Sanatorio Psiquiátrico de Miskatonic alberga pacientes que han visto más allá del velo de la realidad.<br>
+            Sus delirios no son fantasías: son profecías. Sus crisis, ecos de entidades que moran en los ángulos muertos del espacio.<br><br>
+            Como miembro del personal clínico, deberás enfrentar la locura que corroe las mentes de los internos.<br>
+            Elige tu rol. Entra en el pabellón. Y recuerda: no todo lo que habita en estas paredes es humano.
+          </p>
+          <button id="menu-enter-btn" class="menu-btn">Pulsa para Entrar</button>
+          <p class="menu-hint">— Ocupas una plaza de guardia en el Sanatorio —</p>
+        </div>
+      </section>
+
+      <section id="char-selection" class="screen">
+        <h1 class="game-title">Eldritch Sanatorium</h1>
+        <h2 class="game-subtitle">Registro Clínico de Personal de Guardia</h2>
+        <div class="char-grid" id="char-grid"></div>
+      </section>
+
+      <section id="game-board" class="screen">
+        <header class="board-header">
+          <div class="user-info">
+            <div class="player-profile-box"><img id="player-img" src="" alt="Perfil" /></div>
+            <div class="player-text-box">
+              <span id="player-name">---</span>
+              <span id="player-role">---</span>
+            </div>
+          </div>
+          <div id="global-events" class="event-ticker">Cargando bitácora del sanatorio...</div>
+          <span class="patient-counter">Paciente 1 / 5</span>
+        </header>
+
+        <main class="board-main" id="board-scenario">
+          <div id="board-content-wrapper">
+            <div class="turn-controls-panel">
+              <div class="stat-bubble energy">
+                <span class="label">Acción:</span> <span id="current-energy">3</span>/3
+              </div>
+              <div class="stat-bubble shield">
+                <span class="label">Escudo:</span> +<span id="player-shield">0</span>
+              </div>
+              <button id="end-turn-btn" class="end-turn-button">Terminar Turno</button>
+            </div>
+
+            <div class="status-panel">
+              <div class="meter-container">
+                <label id="meter-label">Indicador</label>
+                <div class="meter-bar">
+                  <div id="main-meter" class="meter-fill"></div>
+                </div>
+                <span id="meter-value">50 / 100</span>
+              </div>
+            </div>
+
+            <div class="encounter-zone">
+              <div class="enemy-side">
+                <div class="enemy-card">
+                  <h3 id="enemy-name">Evaluando Interno...</h3>
+                  <div id="enemy-crisis-tag" class="crisis-tag">--</div>
+                  <img id="enemy-img" src="" alt="Paciente" />
+                  <p id="enemy-desc">---</p>
+                  <div class="enemy-combat-stats">
+                    HP: <span id="enemy-hp">0</span> | ATK: <span id="enemy-atk">0</span>
+                  </div>
+                </div>
+
+                <div class="enemy-intent-slot" id="enemy-intent-zone">
+                  <div class="card-back-label">Mazo Crisis</div>
+                  <img
+                    id="enemy-intent-card"
+                    src="assets/img/cards/reverse.png"
+                    class="enemy-hidden-card"
+                    alt="Intento Enemigo"
+                  />
+                  <div id="enemy-card-announcement" class="card-announcement"></div>
+                </div>
+              </div>
+              <div id="enemy-log" class="enemy-log">
+                <div class="enemy-log-header">Bitácora de Crisis</div>
+                <div id="enemy-log-entries" class="enemy-log-entries"></div>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <div id="narrative-modal" class="narrative-overlay">
+          <div class="narrative-box">
+            <h3 class="narrative-title">Aula de Observación Psiquiátrica</h3>
+            <p id="narrative-text"></p>
+            <div id="narrative-options" class="options-container"></div>
+          </div>
+        </div>
+
+        <footer class="board-footer">
+          <div class="player-hand" id="player-hand"></div>
+        </footer>
+      </section>
+    </div>
+
+    <script type="module" src="assets/js/main.js"></script>
+  </body>
+</html>
