@@ -28,33 +28,97 @@ export function aplicarDossierACrisis(rol, crisisDatos) {
 
 export const EVENTOS_PERSONAJES = {
   guardia: [
-    { titulo: "Patrulla de Rutina", descripcion: "Edgar Vance asegura el perímetro del sanatorio.", efecto: { tipo: "escudo", valor: 5 } },
-    { titulo: "Altercado en el Pabellón", descripcion: "Los internos se rebelan en el ala oeste. La tensión aumenta.", efecto: { tipo: "medidor", valor: -4 } },
-    { titulo: "Ronda Nocturna", descripcion: "Vance reporta todo en calma. Te envía suministros.", efecto: { tipo: "robar", valor: 1 } },
-    { titulo: "Fuga de Contención", descripcion: "¡Un paciente ha escapado! El pabellón se pone en alerta.", efecto: { tipo: "medidor", valor: -8 } },
+    {
+      titulo: "Patrulla de Rutina",
+      descripcion: "Edgar Vance asegura el perímetro del sanatorio.",
+      efecto: { tipo: "escudo", valor: 5 },
+    },
+    {
+      titulo: "Altercado en el Pabellón",
+      descripcion: "Los internos se rebelan en el ala oeste. La tensión aumenta.",
+      efecto: { tipo: "medidor", valor: -4 },
+    },
+    {
+      titulo: "Ronda Nocturna",
+      descripcion: "Vance reporta todo en calma. Te envía suministros.",
+      efecto: { tipo: "robar", valor: 1 },
+    },
+    {
+      titulo: "Fuga de Contención",
+      descripcion: "¡Un paciente ha escapado! El pabellón se pone en alerta.",
+      efecto: { tipo: "medidor", valor: -8 },
+    },
   ],
   enfermero: [
-    { titulo: "Dosis de Haloperidol", descripcion: "Miriam Crowe administra un sedante exitosamente.", efecto: { tipo: "medidor", valor: 6 } },
-    { titulo: "Paciente Agitado", descripcion: "El interno forcejea durante la medicación. El estrés se propaga.", efecto: { tipo: "medidor", valor: -5 } },
-    { titulo: "Vendaje Rápido", descripcion: "La enfermera cubre tus heridas menores con pericia.", efecto: { tipo: "escudo", valor: 8 } },
-    { titulo: "Error de Medicación", descripcion: "Un fármaco mal etiquetado causa estragos en la sala.", efecto: { tipo: "medidor", valor: -6 } },
+    {
+      titulo: "Dosis de Haloperidol",
+      descripcion: "Miriam Crowe administra un sedante exitosamente.",
+      efecto: { tipo: "medidor", valor: 6 },
+    },
+    {
+      titulo: "Paciente Agitado",
+      descripcion: "El interno forcejea durante la medicación. El estrés se propaga.",
+      efecto: { tipo: "medidor", valor: -5 },
+    },
+    {
+      titulo: "Vendaje Rápido",
+      descripcion: "La enfermera cubre tus heridas menores con pericia.",
+      efecto: { tipo: "escudo", valor: 8 },
+    },
+    {
+      titulo: "Error de Medicación",
+      descripcion: "Un fármaco mal etiquetado causa estragos en la sala.",
+      efecto: { tipo: "medidor", valor: -6 },
+    },
   ],
   doctor: [
-    { titulo: "Terapia de Choque", descripcion: "Blackwood aplica electrodos con precisión milimétrica.", efecto: { tipo: "medidor", valor: 8 } },
-    { titulo: "Diagnóstico Erróneo", descripcion: "El doctor malinterpreta los síntomas del paciente.", efecto: { tipo: "medidor", valor: -6 } },
-    { titulo: "Hipnosis Regresiva", descripcion: "El paciente revela recuerdos ocultos que dañan su crisis.", efecto: { tipo: "daño_crisis", valor: 6 } },
-    { titulo: "Sesión Interrumpida", descripcion: "Un grito en la distancia desconcentra al doctor.", efecto: { tipo: "medidor", valor: -4 } },
+    {
+      titulo: "Terapia de Choque",
+      descripcion: "Blackwood aplica electrodos con precisión milimétrica.",
+      efecto: { tipo: "medidor", valor: 8 },
+    },
+    {
+      titulo: "Diagnóstico Erróneo",
+      descripcion: "El doctor malinterpreta los síntomas del paciente.",
+      efecto: { tipo: "medidor", valor: -6 },
+    },
+    {
+      titulo: "Hipnosis Regresiva",
+      descripcion: "El paciente revela recuerdos ocultos que dañan su crisis.",
+      efecto: { tipo: "daño_crisis", valor: 6 },
+    },
+    {
+      titulo: "Sesión Interrumpida",
+      descripcion: "Un grito en la distancia desconcentra al doctor.",
+      efecto: { tipo: "medidor", valor: -4 },
+    },
   ],
   alumno: [
-    { titulo: "Notas Reveladoras", descripcion: "Cedric encuentra un patrón en sus apuntes y te lo pasa.", efecto: { tipo: "robar", valor: 1 } },
-    { titulo: "Pregunta Incómoda", descripcion: "El alumno cuestiona tus métodos frente al paciente.", efecto: { tipo: "medidor", valor: -3 } },
-    { titulo: "Epifanía Estudiantil", descripcion: "Una teoría novedosa aligera tu carga mental.", efecto: { tipo: "escudo", valor: 5 } },
-    { titulo: "Crisis de Pánico", descripcion: "El alumno colapsa ante lo sobrenatural. Te contagia el miedo.", efecto: { tipo: "energia", valor: -1 } },
+    {
+      titulo: "Notas Reveladoras",
+      descripcion: "Cedric encuentra un patrón en sus apuntes y te lo pasa.",
+      efecto: { tipo: "robar", valor: 1 },
+    },
+    {
+      titulo: "Pregunta Incómoda",
+      descripcion: "El alumno cuestiona tus métodos frente al paciente.",
+      efecto: { tipo: "medidor", valor: -3 },
+    },
+    {
+      titulo: "Epifanía Estudiantil",
+      descripcion: "Una teoría novedosa aligera tu carga mental.",
+      efecto: { tipo: "escudo", valor: 5 },
+    },
+    {
+      titulo: "Crisis de Pánico",
+      descripcion: "El alumno colapsa ante lo sobrenatural. Te contagia el miedo.",
+      efecto: { tipo: "energia", valor: -1 },
+    },
   ],
 };
 
 export function generarEventoAleatorio(personajeJugador) {
-  const disponibles = Object.keys(EVENTOS_PERSONAJES).filter(p => p !== personajeJugador);
+  const disponibles = Object.keys(EVENTOS_PERSONAJES).filter((p) => p !== personajeJugador);
   const quien = disponibles[Math.floor(Math.random() * disponibles.length)];
   const eventos = EVENTOS_PERSONAJES[quien];
   const evento = eventos[Math.floor(Math.random() * eventos.length)];
@@ -62,9 +126,9 @@ export function generarEventoAleatorio(personajeJugador) {
 }
 
 export function tomarUnTrago() {
-  const magnitud = Math.floor(Math.random() * 11) + 10;
-  const signo = Math.random() < 0.5 ? -1 : 1;
-  return magnitud * signo;
+  const valor = Math.floor(Math.random() * 5) + 5; // 5 a 9 puntos
+  const buenEfecto = Math.random() < 0.5;
+  return { buenEfecto, valor };
 }
 
 export function aplicarEfectoEvento(evento, cm) {
@@ -161,7 +225,7 @@ export class CombatManager {
     this.debuffs = [];
 
     // El medidor se adapta según el rol (Histerismo, Estrés, Cordura...)
-    this.medidorMax = ({ guardia: 50, doctor: 40, alumno: 30, enfermero: 35 })[personajeId] ?? 100;
+    this.medidorMax = { guardia: 50, doctor: 40, alumno: 30, enfermero: 35 }[personajeId] ?? 100;
     this.medidorEstado = personajeId === "enfermero" ? 0 : this.medidorMax;
 
     // Estado de la Amenaza / Crisis
@@ -227,8 +291,8 @@ export class CombatManager {
 
   decayDebuffs() {
     this.debuffs = this.debuffs
-      .map(d => ({ ...d, turnosRestantes: d.turnosRestantes - 1 }))
-      .filter(d => d.turnosRestantes > 0);
+      .map((d) => ({ ...d, turnosRestantes: d.turnosRestantes - 1 }))
+      .filter((d) => d.turnosRestantes > 0);
     this.recalcularAtk();
   }
 
@@ -520,9 +584,12 @@ export class CombatManager {
       if (this.onDerrota) this.onDerrota("Estrés Clínico");
       return;
     } else if (this.personajeId !== "enfermero" && this.medidorEstado <= 0) {
-      const razon = this.personajeId === "alumno" ? "Cordura Propia"
-        : this.personajeId === "doctor" ? "Resistencia del Doctor"
-        : "Aguante Físico";
+      const razon =
+        this.personajeId === "alumno"
+          ? "Cordura Propia"
+          : this.personajeId === "doctor"
+            ? "Resistencia del Doctor"
+            : "Aguante Físico";
       if (this.onDerrota) this.onDerrota(razon);
       return;
     }

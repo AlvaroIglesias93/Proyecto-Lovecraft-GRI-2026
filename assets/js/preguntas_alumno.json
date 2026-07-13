@@ -11,25 +11,57 @@
             "texto": "Neurosis inducida por la lectura de panfletos prohibidos y fatiga severa.",
             "resultado": "correcto",
             "narrativa": "El doctor asiente. Mantienes tu escepticismo médico intacto.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 5, "energia_bonus": 1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 5,
+              "energia_bonus": 1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 4
+            }
           },
           {
             "texto": "Advertencia verídica de los Mi-Go. El cielo se está rasgando en la región.",
             "resultado": "incorrecto",
             "narrativa": "Sintonizas su frecuencia mental. Una migraña helada te sacude.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -20, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -20,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": -3
+            }
           },
           {
             "texto": "Esquizofrenia paranoide típica agravada por intoxicación de grano local.",
             "resultado": "correcto",
             "narrativa": "Diagnóstico clásico. La junta médica aprueba la frialdad de tu enfoque.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 2, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 2,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "robar_cartas",
+              "valor": 1
+            }
           },
           {
             "texto": "Histeria colectiva que afecta a los pescadores de los muelles cercanos.",
             "resultado": "regular",
             "narrativa": "Demasiado impreciso, pero te aleja de la locura cósmica por ahora.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -5, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -5,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 1
+            }
           }
         ]
       },
@@ -41,25 +73,57 @@
             "texto": "Sugerir que Vance sufre fatiga laboral severa debido a los turnos nocturnos.",
             "resultado": "correcto",
             "narrativa": "Buscas una solución racional. El entorno recobra momentáneamente la calma.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 10, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 10,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 4
+            }
           },
           {
             "texto": "Ir de inmediato a medir los muros. Es obvio que los Perros de Tíndalos acechan.",
             "resultado": "incorrecto",
             "narrativa": "Los ángulos de la habitación parecen cerrarse sobre ti al pensarlo.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -25, "energia_bonus": -1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -25,
+              "energia_bonus": -1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": -3
+            }
           },
           {
             "texto": "Redactar un informe para retirar a Vance del servicio activo temporalmente.",
             "resultado": "correcto",
             "narrativa": "Procedimiento administrativo estándar. Mantienes la cabeza fría.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 5, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 5,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "robar_cartas",
+              "valor": 1
+            }
           },
           {
             "texto": "Ignorar la alerta asumiendo que es una broma pesada del personal de cocina.",
             "resultado": "regular",
             "narrativa": "Negligente, pero protege tu mente de procesar la anomalía espacial.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -10, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -10,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 1
+            }
           }
         ]
       },
@@ -71,25 +135,57 @@
             "texto": "Anotar la glosolalia como una regresión lingüística provocada por trauma agudo.",
             "resultado": "correcto",
             "narrativa": "La ciencia te ampara. Tus notas siguen siendo perfectamente coherentes.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 5, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 5,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 4
+            }
           },
           {
             "texto": "Hacer una traducción mental automática. Las sílabas loan al durmiente Cthulhu.",
             "resultado": "incorrecto",
             "narrativa": "Tu cerebro procesa fonemas prohibidos. Un sangrado nasal delata tu daño.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -30, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -30,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": -3
+            }
           },
           {
             "texto": "Interrumpir la sesión argumentando un peligro inminente de colapso respiratorio.",
             "resultado": "regular",
             "narrativa": "Blackwood te mira con desprecio, pero el trance se rompe para bien.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -5, "energia_bonus": 1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -5,
+              "energia_bonus": 1
+            },
+            "efecto_combate": {
+              "tipo": "daño_crisis",
+              "valor": 2
+            }
           },
           {
             "texto": "Taparte los oídos discretamente imitando un ataque súbito de migraña.",
             "resultado": "regular",
             "narrativa": "Poco profesional, pero salvas neuronas valiosas de la exposición.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 0, "energia_bonus": -1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 0,
+              "energia_bonus": -1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 1
+            }
           }
         ]
       },
@@ -101,25 +197,57 @@
             "texto": "Un caso común de abandono familiar en las zonas rurales endogámicas de Dunwich.",
             "resultado": "correcto",
             "narrativa": "Una conclusión clínica impecable para cerrar tu expediente de prácticas.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 15, "energia_bonus": 1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 15,
+              "energia_bonus": 1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 4
+            }
           },
           {
             "texto": "El padre descendió de las estrellas y no poseía una forma material humana.",
             "resultado": "incorrecto",
             "narrativa": "Un horror innombrable e invisible se apodera de tus conclusiones finales.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -35, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -35,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": -3
+            }
           },
           {
             "texto": "El archivo fue alterado o mutilado intencionadamente por fanáticos locales.",
             "resultado": "correcto",
             "narrativa": "Teoría lógica y conspirativa. Es una explicación terrenal aceptable.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 5, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 5,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "robar_cartas",
+              "valor": 1
+            }
           },
           {
             "texto": "Es un error tipográfico del departamento de admisiones del manicomio.",
             "resultado": "regular",
             "narrativa": "Ignorancia feliz. El Dr. Blackwood tacha tu nota con bolígrafo rojo.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -5, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -5,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 1
+            }
           }
         ]
       },
@@ -131,25 +259,57 @@
             "texto": "Es un brote psicótico tardío catalizado por el aislamiento rural severo.",
             "resultado": "correcto",
             "narrativa": "Anotado. El paciente muestra patrones estándar de demencia senil.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 5, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 5,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 4
+            }
           },
           {
             "texto": "Las cabras son vástagos oscuros de Shub-Niggurath. El bosque está vivo.",
             "resultado": "incorrecto",
             "narrativa": "Visualizas pezuñas negras hundiéndose en tu propia cordura.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -25, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -25,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": -3
+            }
           },
           {
             "texto": "Administrar un sedante de espectro amplio para mitigar el delirio auditivo.",
             "resultado": "correcto",
             "narrativa": "Pragmático. Los gritos cesan y tu mente descansa.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 10, "energia_bonus": -1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 10,
+              "energia_bonus": -1
+            },
+            "efecto_combate": {
+              "tipo": "robar_cartas",
+              "valor": 1
+            }
           },
           {
             "texto": "Sugerir un examen otorrino por si padece de tinnitus crónico avanzado.",
             "resultado": "regular",
             "narrativa": "Excesivamente ingenuo, pero te mantiene a salvo de la mitología oscura.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -5, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -5,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 1
+            }
           }
         ]
       },
@@ -161,25 +321,57 @@
             "texto": "Entregarlo al departamento de objetos perdidos catalogado como artesanía barata.",
             "resultado": "correcto",
             "narrativa": "Te deshaces de la pieza sin mirarla dos veces.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 5, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 5,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 4
+            }
           },
           {
             "texto": "Esconderlo en tu abrigo para estudiar sus relieves geométricos no euclidianos.",
             "resultado": "incorrecto",
             "narrativa": "La piedra emite una vibración nauseabunda en tu bolsillo toda la noche.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -30, "energia_bonus": 1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -30,
+              "energia_bonus": 1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": -3
+            }
           },
           {
             "texto": "Lanzarlo directamente al horno de carbón de la calefacción central.",
             "resultado": "correcto",
             "narrativa": "El fuego consume la abominación. Sientes una liberación mental inmediata.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 15, "energia_bonus": -1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 15,
+              "energia_bonus": -1
+            },
+            "efecto_combate": {
+              "tipo": "robar_cartas",
+              "valor": 1
+            }
           },
           {
             "texto": "Donarlo al museo de la Universidad de Miskatonic para su análisis.",
             "resultado": "regular",
             "narrativa": "Cumples con el protocolo académico, aunque el conserje te miró raro.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 0, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 0,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 1
+            }
           }
         ]
       },
@@ -191,25 +383,57 @@
             "texto": "Envenenamiento sistémico por filtración de arsénico o minerales pesados.",
             "resultado": "correcto",
             "narrativa": "Explicación química brillante. La lógica frena el delirio cromático.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 10, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 10,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 4
+            }
           },
           {
             "texto": "Un destello mutágeno cayó del espacio exterior marchitando la materia orgánica.",
             "resultado": "incorrecto",
             "narrativa": "Ves colores imposibles brillar bajo tus propias uñas. Terror absoluto.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -28, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -28,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": -3
+            }
           },
           {
             "texto": "Demencia senil combinada con ceguera psicológica para los colores primarios.",
             "resultado": "correcto",
             "narrativa": "Un informe denso que convence a la junta y te da reputación.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 5, "energia_bonus": 1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 5,
+              "energia_bonus": 1
+            },
+            "efecto_combate": {
+              "tipo": "robar_cartas",
+              "valor": 1
+            }
           },
           {
             "texto": "Negar el acceso al agua del pozo por pura precaución sanitaria institucional.",
             "resultado": "regular",
             "narrativa": "Medida higiénica básica que evita lidiar con el fondo del asunto.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 0, "energia_bonus": -1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 0,
+              "energia_bonus": -1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 1
+            }
           }
         ]
       },
@@ -221,25 +445,57 @@
             "texto": "Notificar a Edgar Vance para que realice una patrulla de rutina perimetral.",
             "resultado": "correcto",
             "narrativa": "Delegas el peligro físico en el profesional armado. Duermes tranquilo.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 10, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 10,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 4
+            }
           },
           {
             "texto": "Subir solo con una vela. Sabes que el Horror de Dunwich busca salir.",
             "resultado": "incorrecto",
             "narrativa": "Una ráfaga helada apaga tu luz y algo viscoso roza tu mejilla.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -35, "energia_bonus": -1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -35,
+              "energia_bonus": -1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": -3
+            }
           },
           {
             "texto": "Atribuir el ruido a la numerosa población de ratas de los viejos muros.",
             "resultado": "correcto",
             "narrativa": "Las ratas en las paredes son un clásico explicable. Ignoras el miedo.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 12, "energia_bonus": 1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 12,
+              "energia_bonus": 1
+            },
+            "efecto_combate": {
+              "tipo": "robar_cartas",
+              "valor": 1
+            }
           },
           {
             "texto": "Tomar un tónico calmante y encerrarte en la oficina de enfermería.",
             "resultado": "regular",
             "narrativa": "Cobarde pero efectivo para preservar tu integridad psicológica.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 5, "energia_bonus": -1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 5,
+              "energia_bonus": -1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 1
+            }
           }
         ]
       },
@@ -251,25 +507,57 @@
             "texto": "Terapia de choque y desinfestación masiva del pabellón mediante veneno.",
             "resultado": "correcto",
             "narrativa": "Atacas el problema físico. El Dr. Blackwood aprueba las medidas higiénicas.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 8, "energia_bonus": -1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 8,
+              "energia_bonus": -1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 4
+            }
           },
           {
             "texto": "Es el familiar de Keziah Mason, la bruja. El pacto de la sangre sigue vigente.",
             "resultado": "incorrecto",
             "narrativa": "Sientes pequeñas mordeduras invisibles en tus tobillos durante el examen.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -32, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -32,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": -3
+            }
           },
           {
             "texto": "Prescribir el aislamiento de la paciente en una celda luminosa sin esquinas oscuras.",
             "resultado": "correcto",
             "narrativa": "Uso inteligente de la arquitectura hospitalaria para calmar su mente.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 12, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 12,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "robar_cartas",
+              "valor": 1
+            }
           },
           {
             "texto": "Ignorarlo. Los sueños inducidos por la fiebre no requieren acción médica.",
             "resultado": "regular",
             "narrativa": "La paciente empeora, pero tu diario de notas se mantiene libre de mitos.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -5, "energia_bonus": 1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -5,
+              "energia_bonus": 1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 1
+            }
           }
         ]
       },
@@ -281,25 +569,57 @@
             "texto": "Rechazar el lote por ruptura de la cadena de almacenamiento y contaminación por humedad.",
             "resultado": "correcto",
             "narrativa": "Decisión de gestión impecable. Proteges a la institución.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 10, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 10,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 4
+            }
           },
           {
             "texto": "Consumir una dosis de prueba para ver si otorga la inmortalidad de la Orden de Dagon.",
             "resultado": "incorrecto",
             "narrativa": "Sufres náuseas espantosas y visiones de abismos ciclópeos sumergidos.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -40, "energia_bonus": 1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -40,
+              "energia_bonus": 1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": -3
+            }
           },
           {
             "texto": "Ordenar a los internos lavar los frascos con alcohol desinfectante antes de usarlos.",
             "resultado": "correcto",
             "narrativa": "Solución manual rápida. Mitigas los riesgos biológicos ordinarios.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 5, "energia_bonus": -1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 5,
+              "energia_bonus": -1
+            },
+            "efecto_combate": {
+              "tipo": "robar_cartas",
+              "valor": 1
+            }
           },
           {
             "texto": "Almacenarlo en el sótano inundado sin dar parte al director médico.",
             "resultado": "regular",
             "narrativa": "Negligencia pura. El olor a podrido invade lentamente tu oficina.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -10, "energia_bonus": 1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -10,
+              "energia_bonus": 1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 1
+            }
           }
         ]
       },
@@ -311,25 +631,57 @@
             "texto": "Cubrirlo con una lona negra opaca y confiscarlo en el almacén de pruebas.",
             "resultado": "correcto",
             "narrativa": "Ojos que no ven, mente que no colapsa. Protocolo correcto.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 10, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 10,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 4
+            }
           },
           {
             "texto": "Estudiar los jeroglíficos bajo la lupa. La llamada del durmiente te obsesiona.",
             "resultado": "incorrecto",
             "narrativa": "La geometría de la piedra empieza a deformar tu percepción visual.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -30, "energia_bonus": 1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -30,
+              "energia_bonus": 1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": -3
+            }
           },
           {
             "texto": "Destruir la escultura a martillazos en el patio trasero del manicomio.",
             "resultado": "correcto",
             "narrativa": "Acción directa y purificadora. Te sientes extrañamente aliviado.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 15, "energia_bonus": -1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 15,
+              "energia_bonus": -1
+            },
+            "efecto_combate": {
+              "tipo": "robar_cartas",
+              "valor": 1
+            }
           },
           {
             "texto": "Vender la pieza a un coleccionista de antigüedades de la ciudad de Providence.",
             "resultado": "regular",
             "narrativa": "Consigues fondos ilegales para el laboratorio, pero arrastras culpa.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -5, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -5,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 1
+            }
           }
         ]
       },
@@ -341,25 +693,57 @@
             "texto": "Estrés postraumático derivado de una insolación extrema prolongada en alta mar.",
             "resultado": "correcto",
             "narrativa": "Explicación médica clásica. El paciente recibe tratamiento normal.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 12, "energia_bonus": 1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 12,
+              "energia_bonus": 1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 4
+            }
           },
           {
             "texto": "Estuvo en R'lyeh. La ciudad sumergida se alza cuando los astros se alinean.",
             "resultado": "incorrecto",
             "narrativa": "Una marea de lodo negro mental inunda tus pensamientos.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -35, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -35,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": -3
+            }
           },
           {
             "texto": "Fabulación mitómana reforzada por el abuso crónico de ron de mala calidad.",
             "resultado": "correcto",
             "narrativa": "Simple y contundente. El Dr. Blackwood firma tu nota con agrado.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 8, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 8,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "robar_cartas",
+              "valor": 1
+            }
           },
           {
             "texto": "Transferir al sujeto al hospital de la marina para quitártelo de encima.",
             "resultado": "regular",
             "narrativa": "Evitas el problema. Menos trabajo, pero aprendes poco.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 0, "energia_bonus": -1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 0,
+              "energia_bonus": -1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 1
+            }
           }
         ]
       },
@@ -371,25 +755,57 @@
             "texto": "Agradecer el gesto y desechar la raíz en el contenedor de residuos biológicos.",
             "resultado": "correcto",
             "narrativa": "Mantienes la higiene institucional libre de supersticiones chamánicas.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 8, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 8,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 4
+            }
           },
           {
             "texto": "Hervirla y destilarla para crear un suero contra los parásitos astrales.",
             "resultado": "incorrecto",
             "narrativa": "El brebaje huele a azufre y te provoca vívidas pesadillas fúngicas.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -25, "energia_bonus": -1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -25,
+              "energia_bonus": -1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": -3
+            }
           },
           {
             "texto": "Analizar la planta en el laboratorio químico buscando alcaloides activos reales.",
             "resultado": "correcto",
             "narrativa": "Enfoque puramente empírico. Encuentras solo celulosa ordinaria.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 15, "energia_bonus": 1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 15,
+              "energia_bonus": 1
+            },
+            "efecto_combate": {
+              "tipo": "robar_cartas",
+              "valor": 1
+            }
           },
           {
             "texto": "Colgarla en la puerta del pabellón para calmar los ánimos de los internos rurales.",
             "resultado": "regular",
             "narrativa": "Efecto placebo comunitario. Funciona, pero da mala imagen médica.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 2, "energia_bonus": -1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 2,
+              "energia_bonus": -1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 1
+            }
           }
         ]
       },
@@ -401,25 +817,57 @@
             "texto": "Quemar el manuscrito en la chimenea central sin abrir una sola página.",
             "resultado": "correcto",
             "narrativa": "Tu instinto de conservación psicológica te salva de la corrupción.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 20, "energia_bonus": -1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 20,
+              "energia_bonus": -1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 4
+            }
           },
           {
             "texto": "Pasar la noche en vela desentrañando los mapas de los desiertos helados.",
             "resultado": "incorrecto",
             "narrativa": "El frío del páramo de Leng se filtra en tu alma. No vuelves a dormir bien.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -38, "energia_bonus": 1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -38,
+              "energia_bonus": 1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": -3
+            }
           },
           {
             "texto": "Archivarlo en la sección de literatura fantástica no catalogada de la biblioteca.",
             "resultado": "correcto",
             "narrativa": "Lo dejas bajo llave. Fuera de la vista, fuera del peligro de demencia.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 5, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 5,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "robar_cartas",
+              "valor": 1
+            }
           },
           {
             "texto": "Entregárselo al Dr. Blackwood para que él decida su valor clínico.",
             "resultado": "regular",
             "narrativa": "El doctor se encierra en su oficina con el libro y cancela las citas.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -5, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -5,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 1
+            }
           }
         ]
       },
@@ -431,25 +879,57 @@
             "texto": "Ordenar a los guardias activar las mangueras de agua para dispersar los grupos.",
             "resultado": "correcto",
             "narrativa": "Control físico inmediato. La disciplina frena la histeria colectiva.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 10, "energia_bonus": -1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 10,
+              "energia_bonus": -1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 4
+            }
           },
           {
             "texto": "Unirte al coro. La vibración eléctrica anuncia la llegada de Azathoth.",
             "resultado": "incorrecto",
             "narrativa": "Tu mente estalla en mil pedazos de estática cósmica insoportable.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -50, "energia_bonus": 1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -50,
+              "energia_bonus": 1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": -3
+            }
           },
           {
             "texto": "Suministrar sedantes masivos a través del sistema de ventilación o la cena.",
             "resultado": "correcto",
             "narrativa": "Solución química eficaz. El pabellón cae en un sueño profundo.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 15, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 15,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "robar_cartas",
+              "valor": 1
+            }
           },
           {
             "texto": "Encerrarte en el búnker de suministros tapándote los oídos con algodón.",
             "resultado": "regular",
             "narrativa": "Sobrevives al evento con la cordura intacta, pero la reputación por los suelos.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 5, "energia_bonus": -1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 5,
+              "energia_bonus": -1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 1
+            }
           }
         ]
       },
@@ -461,25 +941,57 @@
             "texto": "Falta de higiene por parte del equipo de mantenimiento nocturno.",
             "resultado": "correcto",
             "narrativa": "Una queja formal de limpieza soluciona la anomalía superficialmente.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 5, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 5,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 4
+            }
           },
           {
             "texto": "Los Profundos han venido a reclamar a sus mestizos consanguíneos.",
             "resultado": "incorrecto",
             "narrativa": "Sientes un persistente olor a pescado podrido en tus propias ropas.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -25, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -25,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": -3
+            }
           },
           {
             "texto": "Un paciente burló la seguridad y vagó por los sótanos inundados.",
             "resultado": "correcto",
             "narrativa": "Explicación lógica. Refuerzas los candados de los accesos inferiores.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 10, "energia_bonus": -1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 10,
+              "energia_bonus": -1
+            },
+            "efecto_combate": {
+              "tipo": "robar_cartas",
+              "valor": 1
+            }
           },
           {
             "texto": "Ignorar las manchas asumiendo que es agua de condensación de las tuberías.",
             "resultado": "regular",
             "narrativa": "La humedad daña los archivos, pero evita que pienses en monstruos.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -5, "energia_bonus": 1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -5,
+              "energia_bonus": 1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 1
+            }
           }
         ]
       },
@@ -491,25 +1003,57 @@
             "texto": "Aphasia severa debida a congelamiento de los lóbulos frontales.",
             "resultado": "correcto",
             "narrativa": "Diagnóstico neurológico sólido. Recibe terapia térmica estándar.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 12, "energia_bonus": 1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 12,
+              "energia_bonus": 1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 4
+            }
           },
           {
             "texto": "Vio a los Shoggoths en las Montañas de la Locura. Las criaturas imitan voces.",
             "resultado": "incorrecto",
             "narrativa": "Un graznido ensordecedor resuena en tu cabeza impidiéndote concentrarte.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -30, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -30,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": -3
+            }
           },
           {
             "texto": "Trauma psicológico masivo por la pérdida de todo su equipo científico.",
             "resultado": "correcto",
             "narrativa": "Compasivo y profesional. Enfoque terapéutico convencional aprobado.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 8, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 8,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "robar_cartas",
+              "valor": 1
+            }
           },
           {
             "texto": "El paciente imita el canto de las aves polares en un rapto infantil.",
             "resultado": "regular",
             "narrativa": "Simplista, pero te mantiene a una distancia segura de la verdad biológica.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -5, "energia_bonus": -1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -5,
+              "energia_bonus": -1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 1
+            }
           }
         ]
       },
@@ -521,25 +1065,57 @@
             "texto": "Utilizar lámparas de arco voltaico directo para demostrar la refracción óptica.",
             "resultado": "correcto",
             "narrativa": "Física contra el engaño mental. Demuestras que es una ilusión óptica.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 15, "energia_bonus": -1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 15,
+              "energia_bonus": -1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 4
+            }
           },
           {
             "texto": "Es un espía de la Gran Raza de Yith habitando un cuerpo humano prestado.",
             "resultado": "incorrecto",
             "narrativa": "Tu propia sombra parece estirarse hacia ti con intenciones hostiles.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -28, "energia_bonus": 1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -28,
+              "energia_bonus": 1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": -3
+            }
           },
           {
             "texto": "Diagnosticar agnosia visual y distorsión de la autopercepción espacial.",
             "resultado": "correcto",
             "narrativa": "Terminología técnica impecable. La junta médica alaba tu rigor académico.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 10, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 10,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "robar_cartas",
+              "valor": 1
+            }
           },
           {
             "texto": "Apagar todas las luces de la sala de examen para eliminar el problema físico.",
             "resultado": "regular",
             "narrativa": "A oscuras nadie delira, pero tropiezas con el mobiliario de la clínica.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 0, "energia_bonus": -1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 0,
+              "energia_bonus": -1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 1
+            }
           }
         ]
       },
@@ -551,25 +1127,57 @@
             "texto": "Sumergir el instrumento en un cubo de agua para detener la resonancia física.",
             "resultado": "correcto",
             "narrativa": "Destruyes las propiedades acústicas del objeto. Silencio absoluto.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 12, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 12,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 4
+            }
           },
           {
             "texto": "Tocar una melodía para ensanchar el abismo cósmico detrás de la ventana.",
             "resultado": "incorrecto",
             "narrativa": "La música invoca una negrura infinita que succiona parte de tu vitalidad.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -40, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -40,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": -3
+            }
           },
           {
             "texto": "Atribuir el sonido a los cambios térmicos que dilatan las cuerdas tensas.",
             "resultado": "correcto",
             "narrativa": "Física de materiales. Una explicación reconfortante y ordinaria.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 10, "energia_bonus": 1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 10,
+              "energia_bonus": 1
+            },
+            "efecto_combate": {
+              "tipo": "robar_cartas",
+              "valor": 1
+            }
           },
           {
             "texto": "Regalar el violín al conserje para que lo venda en el mercado de pulgas.",
             "resultado": "regular",
             "narrativa": "Te quitas la maldición de encima, aunque el conserje desaparece al día siguiente.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -5, "energia_bonus": -1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -5,
+              "energia_bonus": -1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 1
+            }
           }
         ]
       },
@@ -581,25 +1189,57 @@
             "texto": "Dieta vegetariana estricta suplementada con altas dosis de sedantes clínicos.",
             "resultado": "correcto",
             "narrativa": "Control estricto. La falta de proteína frena la degradación biológica.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 10, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 10,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 4
+            }
           },
           {
             "texto": "Carne de ganado infectado para acelerar su transformación en Ghoul subterráneo.",
             "resultado": "incorrecto",
             "narrativa": "El paciente te muerde la mano durante el festín contagiándote su mal.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -35, "energia_bonus": -1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -35,
+              "energia_bonus": -1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": -3
+            }
           },
           {
             "texto": "Nutrición forzada mediante suero purificado por vía intravenosa.",
             "resultado": "correcto",
             "narrativa": "Procedimiento clínico aséptico. Evitas el contacto directo con sus fauces.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 15, "energia_bonus": -1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 15,
+              "energia_bonus": -1
+            },
+            "efecto_combate": {
+              "tipo": "robar_cartas",
+              "valor": 1
+            }
           },
           {
             "texto": "Darle las sobras de la cocina sin revisar el contenido del plato.",
             "resultado": "regular",
             "narrativa": "El interno se mantiene tranquilo, pero notas que sus dientes se afilan.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -8, "energia_bonus": 1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -8,
+              "energia_bonus": 1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 1
+            }
           }
         ]
       },
@@ -611,25 +1251,57 @@
             "texto": "Administrarle un sedante por la espalda alegando un brote de fatiga extrema.",
             "resultado": "correcto",
             "narrativa": "Tratas a tu supervisor como a un paciente más. Controlas la situación.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 15, "energia_bonus": -1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 15,
+              "energia_bonus": -1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 4
+            }
           },
           {
             "texto": "Ayudarle a trazar las líneas para abrir el portal hacia la corte de Yog-Sothoth.",
             "resultado": "incorrecto",
             "narrativa": "Tus ojos ven el tejido del espacio romperse. Cicatrices mentales eternas.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -45, "energia_bonus": 1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -45,
+              "energia_bonus": 1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": -3
+            }
           },
           {
             "texto": "Llamar urgentemente a la junta directiva médica de la universidad de Arkham.",
             "resultado": "correcto",
             "narrativa": "Sigues los canales oficiales corporativos. El orden institucional te ampara.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 10, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 10,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "robar_cartas",
+              "valor": 1
+            }
           },
           {
             "texto": "Cerrar la puerta silenciosamente y borrar el evento de tu memoria de prácticas.",
             "resultado": "regular",
             "narrativa": "La negación cobarde te salva del peligro inmediato de locura.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 2, "energia_bonus": -1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 2,
+              "energia_bonus": -1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 1
+            }
           }
         ]
       },
@@ -641,25 +1313,57 @@
             "texto": "Verter toneladas de hormigón industrial rápido para sellar la cavidad del suelo.",
             "resultado": "correcto",
             "narrativa": "Entierras la anomalía ecológica bajo tres metros de cemento gris.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 15, "energia_bonus": -1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 15,
+              "energia_bonus": -1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 4
+            }
           },
           {
             "texto": "Respirar los vapores para adquirir la clarividencia de los mundos exteriores.",
             "resultado": "incorrecto",
             "narrativa": "Tus pulmones se queman y tu mente se llena de cenizas negras del cosmos.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -35, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -35,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": -3
+            }
           },
           {
             "texto": "Instalar extractores de aire mecánicos y filtros químicos de carbón activo.",
             "resultado": "correcto",
             "narrativa": "Excelente ingeniería sanitaria aplicada. Limpias la atmósfera del centro.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 10, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 10,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "robar_cartas",
+              "valor": 1
+            }
           },
           {
             "texto": "Catalogar el evento como una emanación común de gas metano de alcantarilla.",
             "resultado": "regular",
             "narrativa": "Una mentira científica útil para mantener la calma de la plantilla.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 0, "energia_bonus": 1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 0,
+              "energia_bonus": 1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 1
+            }
           }
         ]
       },
@@ -671,25 +1375,57 @@
             "texto": "Hipermnesia delirante alimentada por la lectura obsesiva de atlas antiguos.",
             "resultado": "correcto",
             "narrativa": "Explicación neurológica sólida. Mantienes la cordura intacta.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 10, "energia_bonus": 1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 10,
+              "energia_bonus": 1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 4
+            }
           },
           {
             "texto": "Su mente fue intercambiada con la de un archivista de la Gran Raza de Yith.",
             "resultado": "incorrecto",
             "narrativa": "Sientes el vértigo del tiempo geológico aplastando tu pequeño cerebro.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -32, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -32,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": -3
+            }
           },
           {
             "texto": "Criptomnesia. La paciente repite datos que leyó de pasada en la biblioteca.",
             "resultado": "correcto",
             "narrativa": "Racionalización perfecta. Desestimas el origen sobrenatural.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 8, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 8,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "robar_cartas",
+              "valor": 1
+            }
           },
           {
             "texto": "Someter a la paciente a sesiones continuadas de aislamiento terapéutico.",
             "resultado": "regular",
             "narrativa": "Cruel pero efectivo para acallar los datos que desestabilizan el hospital.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -5, "energia_bonus": -1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -5,
+              "energia_bonus": -1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 1
+            }
           }
         ]
       },
@@ -701,25 +1437,57 @@
             "texto": "Subir la presión de la caldera al máximo para calcinar el nido por calor.",
             "resultado": "correcto",
             "narrativa": "El vapor a presión purifica el sistema mecánico. Problema resuelto.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 15, "energia_bonus": -1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 15,
+              "energia_bonus": -1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 4
+            }
           },
           {
             "texto": "Alimentarlos con tu propia sangre para ganarte el favor del dios Tsathoggua.",
             "resultado": "incorrecto",
             "narrativa": "Las criaturas drenan tu cordura dejándote exhausto y paranoico.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -40, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -40,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": -3
+            }
           },
           {
             "texto": "Inundar el compartimento con ácido sulfúrico industrial concentrado.",
             "resultado": "correcto",
             "narrativa": "Destrucción química total. Las muestras orgánicas se disuelven.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 12, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 12,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "robar_cartas",
+              "valor": 1
+            }
           },
           {
             "texto": "Cerrar la válvula de combustible y fingir que la caldera está rota.",
             "resultado": "regular",
             "narrativa": "Pasas frío toda la noche, pero evitas confrontar a los seres del fango.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -5, "energia_bonus": -1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -5,
+              "energia_bonus": -1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 1
+            }
           }
         ]
       },
@@ -731,25 +1499,57 @@
             "texto": "Sugerir un examen de optometría inmediato por astigmatismo corneal severo.",
             "resultado": "correcto",
             "narrativa": "Reduces el cosmos a un problema de lentes físicas. Brillante.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 12, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 12,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 4
+            }
           },
           {
             "texto": "Revisar los textos de Al-Hazred. El despertar de Nyarlathotep es inminente.",
             "resultado": "incorrecto",
             "narrativa": "El cielo nocturno parece combarse sobre tus ojos infundiéndote terror.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -30, "energia_bonus": 1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -30,
+              "energia_bonus": 1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": -3
+            }
           },
           {
             "texto": "Trastorno delirante crónico con fijación en la mecánica celeste astronómica.",
             "resultado": "correcto",
             "narrativa": "Catalogación técnica impecable que archiva el caso sin más problemas.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 10, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 10,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "robar_cartas",
+              "valor": 1
+            }
           },
           {
             "texto": "Prohibir el acceso al telescopio y cerrar las persianas de todo el centro.",
             "resultado": "regular",
             "narrativa": "Solución simplista que reduce la tensión pero limita tu aprendizaje clínico.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 2, "energia_bonus": -1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 2,
+              "energia_bonus": -1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 1
+            }
           }
         ]
       },
@@ -761,25 +1561,57 @@
             "texto": "Inyectar formaldehído concentrado directamente en las arterias principales.",
             "resultado": "correcto",
             "narrativa": "Fijas los tejidos deteniendo cualquier reacción química anómala.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 12, "energia_bonus": -1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 12,
+              "energia_bonus": -1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 4
+            }
           },
           {
             "texto": "Tratar de comunicarte telepáticamente con la mente alienígena que lo reanima.",
             "resultado": "incorrecto",
             "narrativa": "Una descarga de datos cósmicos carboniza parte de tu lóbulo parietal.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -42, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -42,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": -3
+            }
           },
           {
             "texto": "Ordenar la incineración inmediata del cuerpo por riesgo biológico extremo.",
             "resultado": "correcto",
             "narrativa": "El fuego purifica el quirófano. No dejas rastro de la aberración.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 15, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 15,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "robar_cartas",
+              "valor": 1
+            }
           },
           {
             "texto": "Abandonar la sala alegando un ataque imprevisto de náuseas médicas.",
             "resultado": "regular",
             "narrativa": "Salvas el pellejo psicológico, pero el laboratorio queda contaminado.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 5, "energia_bonus": -1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 5,
+              "energia_bonus": -1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 1
+            }
           }
         ]
       },
@@ -791,25 +1623,57 @@
             "texto": "Contratar un servicio profesional de exterminio mediante gas cianhídrico.",
             "resultado": "correcto",
             "narrativa": "Solución química ordinaria. El ruido de garras cesa por completo.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 10, "energia_bonus": -1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 10,
+              "energia_bonus": -1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 4
+            }
           },
           {
             "texto": "Bajar al sótano a ofrecerles un tratado de paz escrito con tu propia sangre.",
             "resultado": "incorrecto",
             "narrativa": "Te muerden ferozmente los dedos. La fiebre rompe tus defensas mentales.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -35, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -35,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": -3
+            }
           },
           {
             "texto": "Ignorar la advertencia considerando que las alucinaciones por zoopsia son normales.",
             "resultado": "correcto",
             "narrativa": "Racionalización perfecta del síntoma. Duermes de forma plácida.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 8, "energia_bonus": 1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 8,
+              "energia_bonus": 1
+            },
+            "efecto_combate": {
+              "tipo": "robar_cartas",
+              "valor": 1
+            }
           },
           {
             "texto": "Adoptar tres gatos callejeros y soltarlos en los túneles inferiores.",
             "resultado": "regular",
             "narrativa": "Medida rústica. Los gatos huyen despavoridos, pero ganas tiempo.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 0, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 0,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 1
+            }
           }
         ]
       },
@@ -821,25 +1685,57 @@
             "texto": "Denunciar a la enfermera por acoso laboral y manipulación de instrumental.",
             "resultado": "correcto",
             "narrativa": "Ataque burocrático contundente. El orden legal te ancla a la realidad.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 15, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 15,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 4
+            }
           },
           {
             "texto": "Abrir el frasco para fundir tus pensamientos con el cilindro de metal de los Mi-Go.",
             "resultado": "incorrecto",
             "narrativa": "Sufres una despersonalización pavorosa. Olvidas quién eres por horas.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -45, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -45,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": -3
+            }
           },
           {
             "texto": "Romper el cristal contra el suelo y limpiar el fluido con desinfectante clorado.",
             "resultado": "correcto",
             "narrativa": "Eliminas la broma macabra de cuajo. Sientes un alivio inmediato.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 10, "energia_bonus": -1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 10,
+              "energia_bonus": -1
+            },
+            "efecto_combate": {
+              "tipo": "robar_cartas",
+              "valor": 1
+            }
           },
           {
             "texto": "Asumir que es una maqueta anatómica de cera para las clases teóricas.",
             "resultado": "regular",
             "narrativa": "Negación protectora. Tus ojos deciden no ver el etiquetado real.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 5, "energia_bonus": 1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 5,
+              "energia_bonus": 1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 1
+            }
           }
         ]
       },
@@ -851,25 +1747,57 @@
             "texto": "Diagnosticar fabulación geográfica mitómana compensatoria de la pérdida de memoria.",
             "resultado": "correcto",
             "narrativa": "Estructura analítica perfecta. El Dr. Blackwood firma tu hoja con un 10.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 12, "energia_bonus": 1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 12,
+              "energia_bonus": 1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 4
+            }
           },
           {
             "texto": "Equipar una linterna y buscar la losa de piedra con el sello de Tsathoggua.",
             "resultado": "incorrecto",
             "narrativa": "Te pierdes en la oscuridad del subsuelo escuchando susurros de la tierra.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -38, "energia_bonus": -1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -38,
+              "energia_bonus": -1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": -3
+            }
           },
           {
             "texto": "Tapiar el sótano por completo usando ladrillo refractario y mortero denso.",
             "resultado": "correcto",
             "narrativa": "Fierro y piedra contra el mito. Sellas cualquier peligro físico potencial.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 15, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 15,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "robar_cartas",
+              "valor": 1
+            }
           },
           {
             "texto": "Darle un mapa de la ciudad para que pinte sus delirios sobre el papel.",
             "resultado": "regular",
             "narrativa": "Terapia ocupacional básica. El paciente se entretiene pintando túneles.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 5, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 5,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 1
+            }
           }
         ]
       },
@@ -881,25 +1809,57 @@
             "texto": "Aplicar ungüentos basados en vaselina salicílica y baños de agua dulce continua.",
             "resultado": "correcto",
             "narrativa": "Tratamiento dermatológico estándar. Combates la descamación física.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 10, "energia_bonus": -1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 10,
+              "energia_bonus": -1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 4
+            }
           },
           {
             "texto": "Llevarlo a la costa a medianoche para unirte a la procesión de las profundidades.",
             "resultado": "incorrecto",
             "narrativa": "El agua helada invade tus pulmones mientras tu humanidad se disuelve.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -50, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -50,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": -3
+            }
           },
           {
             "texto": "Transferirlo a un pabellón de máxima seguridad aislado de cualquier fuente hídrica.",
             "resultado": "correcto",
             "narrativa": "Control estricto de las variables biológicas. Evitas que el mal se propague.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 15, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 15,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "robar_cartas",
+              "valor": 1
+            }
           },
           {
             "texto": "Anotar el caso como una variante extrema e inusual de ictiosis congénita.",
             "resultado": "regular",
             "narrativa": "Una etiqueta médica que oculta un horror genético incalificable.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 5, "energia_bonus": 1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 5,
+              "energia_bonus": 1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 1
+            }
           }
         ]
       },
@@ -911,25 +1871,57 @@
             "texto": "Firmar con firmeza racionalizando cada horror vivido como un mero caso clínico.",
             "resultado": "correcto",
             "narrativa": "Te gradúas con honores. Tu mente es de acero templado científico.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 20, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 20,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 4
+            }
           },
           {
             "texto": "Firmar usando el símbolo antiguo de los Antiguos para proteger tu carrera médica.",
             "resultado": "incorrecto",
             "narrativa": "El doctor sonríe con malicia. Sabe que perteneces al manicomio para siempre.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -40, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -40,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": -3
+            }
           },
           {
             "texto": "Rechazar el título y huir de Arkham en el primer tren de la mañana hacia Boston.",
             "resultado": "correcto",
             "narrativa": "Salvas tu alma y tu cordura, dejando atrás los abismos de la locura.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 15, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 15,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "robar_cartas",
+              "valor": 1
+            }
           },
           {
             "texto": "Quemar la hoja de evaluación en su cara mientras recitas cánticos prohibidos.",
             "resultado": "regular",
             "narrativa": "Los guardias te reducen. Mañana ocuparás la celda número siete.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -20, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -20,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 1
+            }
           }
         ]
       },
@@ -941,25 +1933,57 @@
             "texto": "Atribuirlo a la antigua red de tuberías de vapor que cruza el subsuelo.",
             "resultado": "correcto",
             "narrativa": "La física explica el latido. El edificio es solo metal y piedra.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 8, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 8,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 4
+            }
           },
           {
             "texto": "Pegar el oído al suelo para escuchar el pulso de Azathoth en el centro de la Tierra.",
             "resultado": "incorrecto",
             "narrativa": "El latido sincrónico del caos ciego perfora tu tímpano interno.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -30, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -30,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": -3
+            }
           },
           {
             "texto": "Solicitar un estudio geológico para verificar la composición del terreno.",
             "resultado": "correcto",
             "narrativa": "Ciencia aplicada. El informe descarta actividad telúrica anómala.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 10, "energia_bonus": 1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 10,
+              "energia_bonus": 1
+            },
+            "efecto_combate": {
+              "tipo": "robar_cartas",
+              "valor": 1
+            }
           },
           {
             "texto": "Cambiar de sala de prácticas sin comentar el incidente.",
             "resultado": "regular",
             "narrativa": "Tu silencio te protege de lo que no quieres comprender.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 2, "energia_bonus": -1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 2,
+              "energia_bonus": -1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 1
+            }
           }
         ]
       },
@@ -971,25 +1995,57 @@
             "texto": "Narcolepsia con alucinaciones hipnagógicas típicas.",
             "resultado": "correcto",
             "narrativa": "Diagnóstico onírico estándar. El expediente se cierra.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 5, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 5,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 4
+            }
           },
           {
             "texto": "Ha visto la escalera de los Gugs en el valle de Pnath.",
             "resultado": "incorrecto",
             "narrativa": "La imagen del hueso astillado se graba en tu retina.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -25, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -25,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": -3
+            }
           },
           {
             "texto": "Privación del sueño REM por los turnos nocturnos del personal sanitario.",
             "resultado": "correcto",
             "narrativa": "Causalidad laboral evidente. El paciente necesita descanso.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 12, "energia_bonus": 1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 12,
+              "energia_bonus": 1
+            },
+            "efecto_combate": {
+              "tipo": "robar_cartas",
+              "valor": 1
+            }
           },
           {
             "texto": "Derivar el caso al departamento de arte-terapia ocupacional.",
             "resultado": "regular",
             "narrativa": "Evitas pronunciarte. Que pinten la escalera en un folio.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -3, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -3,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 1
+            }
           }
         ]
       },
@@ -1001,25 +2057,57 @@
             "texto": "Corriente de aire filtrada por la ventilación del viejo edificio.",
             "resultado": "correcto",
             "narrativa": "Física de fluidos. El parte queda archivado sin consecuencias.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 6, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 6,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 4
+            }
           },
           {
             "texto": "El color exterior ha tomado forma. La habitación debe sellarse ya.",
             "resultado": "incorrecto",
             "narrativa": "Tu superstición materializa el miedo en la comisura de tus ojos.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -28, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -28,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": -3
+            }
           },
           {
             "texto": "Descartar por falta de pruebas físicas y cambiar a la paciente de habitación.",
             "resultado": "correcto",
             "narrativa": "Protocolar y discreto. La muda de cama resuelve la anomalía.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 8, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 8,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "robar_cartas",
+              "valor": 1
+            }
           },
           {
             "texto": "Sugerir revisar el sistema de calefacción por posibles fugas de gas.",
             "resultado": "regular",
             "narrativa": "La explicación gasística tranquiliza a la enfermera. Misión cumplida.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 0, "energia_bonus": 1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 0,
+              "energia_bonus": 1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 1
+            }
           }
         ]
       },
@@ -1031,25 +2119,57 @@
             "texto": "Alucinación visual inducida por el perfil de los barrotes al atardecer.",
             "resultado": "correcto",
             "narrativa": "Efecto sombra perfectamente explicable. Tomas nota y sigues.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 6, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 6,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 4
+            }
           },
           {
             "texto": "Nyarlathotep camina entre los internos. El mensajero está aquí.",
             "resultado": "incorrecto",
             "narrativa": "Una sonrisa invisible se dibuja en el aire frente a tu cara.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -35, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -35,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": -3
+            }
           },
           {
             "texto": "Reflejo distorsionado del conserje nocturno en el vidrio de la puerta.",
             "resultado": "correcto",
             "narrativa": "Confirmas que el conserje usa un pasamontañas. Lógico y mundano.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 5, "energia_bonus": 1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 5,
+              "energia_bonus": 1
+            },
+            "efecto_combate": {
+              "tipo": "robar_cartas",
+              "valor": 1
+            }
           },
           {
             "texto": "Aumentar la dosis de antipsicóticos del paciente.",
             "resultado": "regular",
             "narrativa": "La nube química adormece al paciente y también tu curiosidad.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -5, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -5,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 1
+            }
           }
         ]
       },
@@ -1061,25 +2181,57 @@
             "texto": "Marca de humedad y sarro con patrón aleatorio, sin valor clínico.",
             "resultado": "correcto",
             "narrativa": "Sentido común aplicado. El mantenimiento limpiará la porcelana.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 8, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 8,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 4
+            }
           },
           {
             "texto": "Símbolos de la puerta estelar. Copiarlos podría abrir un umbral.",
             "resultado": "incorrecto",
             "narrativa": "Trazas los signos en tu cuaderno y sientes vértigo dimensional.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -32, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -32,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": -3
+            }
           },
           {
             "texto": "Comunicar al departamento de mantenimiento que cambien la taza entera.",
             "resultado": "correcto",
             "narrativa": "Medida higiénica radical. El objeto desaparece del sanatorio.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 10, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 10,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "robar_cartas",
+              "valor": 1
+            }
           },
           {
             "texto": "Fotografiar los glifos y enviarlos a la facultad de antropología.",
             "resultado": "regular",
             "narrativa": "El departamento de arqueología promete investigar. Tú, mientras, firmas.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 2, "energia_bonus": -1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 2,
+              "energia_bonus": -1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 1
+            }
           }
         ]
       },
@@ -1091,25 +2243,57 @@
             "texto": "Aislamiento sanitario estricto y evaluación psiquiátrica de urgencia.",
             "resultado": "correcto",
             "narrativa": "Protocolo de higiene y salud mental. El ojo desaparece bajo la lejía.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 12, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 12,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 4
+            }
           },
           {
             "texto": "Es la señal de la Iglesia del Dios Larvario. El ojo te vigila.",
             "resultado": "incorrecto",
             "narrativa": "Sientes una mirada húmeda en la nuca que no se va en todo el día.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -30, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -30,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": -3
+            }
           },
           {
             "texto": "Ordenar una limpieza química profunda y restringir materiales de arte.",
             "resultado": "correcto",
             "narrativa": "Medida restrictiva y efectiva. El paciente pierde sus herramientas.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 5, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 5,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "robar_cartas",
+              "valor": 1
+            }
           },
           {
             "texto": "Tomar nota del símbolo como posible evidencia de un culto interno.",
             "resultado": "regular",
             "narrativa": "El expediente engorda con tu teoría conspirativa institucional.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -8, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -8,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 1
+            }
           }
         ]
       },
@@ -1121,25 +2305,57 @@
             "texto": "Entregarlo al departamento de evidencias para su incineración programada.",
             "resultado": "correcto",
             "narrativa": "El fuego administrativo consume el conocimiento prohibido.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 15, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 15,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 4
+            }
           },
           {
             "texto": "Leer una página en voz alta para evaluar su contenido arqueológico.",
             "resultado": "incorrecto",
             "narrativa": "Las palabras se clavan en tu cráneo como astillas de obsidiana.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -40, "energia_bonus": 1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -40,
+              "energia_bonus": 1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": -3
+            }
           },
           {
             "texto": "Catalogarlo como 'literatura de ficción' y almacenarlo en el sótano.",
             "resultado": "correcto",
             "narrativa": "Etiqueta burocrática. El mal duerme en el archivo muerto.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 8, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 8,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "robar_cartas",
+              "valor": 1
+            }
           },
           {
             "texto": "Usar las páginas como combustible para la caldera del sanatorio.",
             "resultado": "regular",
             "narrativa": "El humo negro huele a carne chamuscada, pero el frío desaparece.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 5, "energia_bonus": -1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 5,
+              "energia_bonus": -1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 1
+            }
           }
         ]
       },
@@ -1151,25 +2367,57 @@
             "texto": "Coincidencia estadística. El sesgo de confirmación explica el fenómeno.",
             "resultado": "correcto",
             "narrativa": "La ciencia estadística te protege del horror profético.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 10, "energia_bonus": 1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 10,
+              "energia_bonus": 1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 4
+            }
           },
           {
             "texto": "El paciente es un vástago de Yith. Su mente viaja en el tiempo.",
             "resultado": "incorrecto",
             "narrativa": "Vislumbras tu propio futuro en una pesadilla de la que no despiertas.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -35, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -35,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": -3
+            }
           },
           {
             "texto": "Solicitar una autopsia y un estudio forense riguroso del suceso.",
             "resultado": "correcto",
             "narrativa": "Método científico. La autopsia revela causas naturales. Caso cerrado.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 12, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 12,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "robar_cartas",
+              "valor": 1
+            }
           },
           {
             "texto": "Pedir al paciente que describa tu futuro en privado.",
             "resultado": "regular",
             "narrativa": "La tentación te corroe. Lo que oyes te quita el sueño.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -10, "energia_bonus": 1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -10,
+              "energia_bonus": 1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 1
+            }
           }
         ]
       },
@@ -1181,25 +2429,57 @@
             "texto": "Ignorar el sonido y concentrarte en la ortografía de los informes.",
             "resultado": "correcto",
             "narrativa": "Buena disciplina. Tus notas son impecables y tu mente clara.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 12, "energia_bonus": 1 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 12,
+              "energia_bonus": 1
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 4
+            }
           },
           {
             "texto": "El eco es la respiración de los Primigenios despertando en las profundidades.",
             "resultado": "incorrecto",
             "narrativa": "El temblor se apodera de tu mano al escribir. Manchas de tinta negra.",
-            "efecto": { "tipo": "modificar_medidor", "valor": -30, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": -30,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": -3
+            }
           },
           {
             "texto": "Mirar el reloj y calcular cuánto falta para terminar tu turno.",
             "resultado": "correcto",
             "narrativa": "El tiempo es lineal y humano. Pronto estarás fuera del sanatorio.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 8, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 8,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "robar_cartas",
+              "valor": 1
+            }
           },
           {
             "texto": "Preguntar al doctor si él también ha oído el estruendo.",
             "resultado": "regular",
             "narrativa": "Blackwood te ignora. El eco cesa. Aprietas el boli y sigues.",
-            "efecto": { "tipo": "modificar_medidor", "valor": 0, "energia_bonus": 0 }
+            "efecto": {
+              "tipo": "modificar_medidor",
+              "valor": 0,
+              "energia_bonus": 0
+            },
+            "efecto_combate": {
+              "tipo": "bloqueo",
+              "valor": 1
+            }
           }
         ]
       }

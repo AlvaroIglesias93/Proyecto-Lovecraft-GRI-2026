@@ -195,16 +195,19 @@ export class MenuUI {
   mostrarEfectoTrago(efecto, onComplete) {
     const overlay = document.createElement("div");
     overlay.className = "drink-overlay";
+    const positive = efecto.buenEfecto === true;
     overlay.innerHTML = `
       <div class="drink-box">
-        <h3 class="drink-title">Un Trago Reparador</h3>
-        <p class="drink-effect ${efecto >= 0 ? "positive" : "negative"}">
-          ${efecto >= 0 ? "+" : ""}${efecto}
+        <h3 class="drink-title">${positive ? "Un Trago Reparador" : "Un Trago Amargo"}</h3>
+        <p class="drink-effect ${positive ? "positive" : "negative"}">
+          ${positive ? "+" : "-"}${efecto.valor}
         </p>
         <p class="drink-body">
-          ${efecto >= 0
-            ? "El licor casero te fortalece el espíritu."
-            : "El brebaje turbio te sienta mal..."}
+          ${
+            positive
+              ? "El brebaje ayuda a tu estado psicológico."
+              : "El trago te sienta mal y te deja más agotado."
+          }
         </p>
       </div>
     `;
@@ -239,19 +242,32 @@ export class MenuUI {
   }
 
   dibujarRegistroEnemigo(registro) {
-    const contenedor = document.getElementById("enemy-log-entries");
+    const contenedor = document.getElementById("enemy-reaction");
     if (!contenedor) return;
-    contenedor.innerHTML = "";
-    registro.forEach((r) => {
-      const entry = document.createElement("div");
-      entry.className = "enemy-log-entry";
-      let partes = [];
-      if (r.escudoAbsorbido > 0) partes.push(`<span class="log-shield">█ ${r.escudoAbsorbido} absorbido</span>`);
-      if (r.dañoNeto > 0) partes.push(`<span class="log-damage">✚ ${r.dañoNeto} daño</span>`);
-      if (r.escudoEnemigo > 0) partes.push(`<span class="log-shield">◈ ${r.escudoEnemigo} inevitable</span>`);
-      entry.innerHTML = `<strong>${r.nombre}</strong> — ${partes.join(" ") || "sin efecto"}`;
-      contenedor.appendChild(entry);
-    });
+
+    const ultimo = Array.isArray(registro) ? registro[0] : null;
+    if (!ultimo) {
+      contenedor.textContent = "";
+      contenedor.classList.remove("is-visible");
+      return;
+    }
+
+    const partes = [];
+    if (ultimo.dañoNeto > 0) partes.push(`${ultimo.dañoNeto} de daño`);
+    if (ultimo.escudoAbsorbido > 0)
+      partes.push(`${ultimo.escudoAbsorbido} absorbidos por tu escudo`);
+    if (ultimo.escudoEnemigo > 0) partes.push(`${ultimo.escudoEnemigo} inevitables`);
+
+    const resumen =
+      partes.length > 0 ? `Te ha hecho ${partes.join(" y ")}` : "No te ha hecho daño visible";
+    contenedor.textContent = resumen;
+    contenedor.classList.add("is-visible");
+
+    clearTimeout(contenedor._hideTimer);
+    contenedor._hideTimer = setTimeout(() => {
+      contenedor.classList.remove("is-visible");
+      contenedor.textContent = "";
+    }, 3000);
   }
 
   dibujarModalNarrativo(nodo, onOptionCallback) {

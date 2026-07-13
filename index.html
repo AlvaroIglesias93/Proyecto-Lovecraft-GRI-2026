@@ -17,11 +17,15 @@
           <p class="menu-subtitle">Archivos Clínicos del Horror Cósmico</p>
           <div class="menu-divider"></div>
           <p class="menu-description">
-            Arkham, Massachusetts — 1928.<br>
-            El Sanatorio Psiquiátrico de Miskatonic alberga pacientes que han visto más allá del velo de la realidad.<br>
-            Sus delirios no son fantasías: son profecías. Sus crisis, ecos de entidades que moran en los ángulos muertos del espacio.<br><br>
-            Como miembro del personal clínico, deberás enfrentar la locura que corroe las mentes de los internos.<br>
-            Elige tu rol. Entra en el pabellón. Y recuerda: no todo lo que habita en estas paredes es humano.
+            Arkham, Massachusetts — 1928.<br />
+            El Sanatorio Psiquiátrico de Miskatonic alberga pacientes que han visto más allá del
+            velo de la realidad.<br />
+            Sus delirios no son fantasías: son profecías. Sus crisis, ecos de entidades que moran en
+            los ángulos muertos del espacio.<br /><br />
+            Como miembro del personal clínico, deberás enfrentar la locura que corroe las mentes de
+            los internos.<br />
+            Elige tu rol. Entra en el pabellón. Y recuerda: no todo lo que habita en estas paredes
+            es humano.
           </p>
           <button id="menu-enter-btn" class="menu-btn">Pulsa para Entrar</button>
           <p class="menu-hint">— Ocupas una plaza de guardia en el Sanatorio —</p>
@@ -48,27 +52,7 @@
         </header>
 
         <main class="board-main" id="board-scenario">
-          <div id="board-content-wrapper">
-            <div class="turn-controls-panel">
-              <div class="stat-bubble energy">
-                <span class="label">Acción:</span> <span id="current-energy">3</span>/3
-              </div>
-              <div class="stat-bubble shield">
-                <span class="label">Escudo:</span> +<span id="player-shield">0</span>
-              </div>
-              <button id="end-turn-btn" class="end-turn-button">Terminar Turno</button>
-            </div>
-
-            <div class="status-panel">
-              <div class="meter-container">
-                <label id="meter-label">Indicador</label>
-                <div class="meter-bar">
-                  <div id="main-meter" class="meter-fill"></div>
-                </div>
-                <span id="meter-value">50 / 100</span>
-              </div>
-            </div>
-
+          <div class="board-scene">
             <div class="encounter-zone">
               <div class="enemy-side">
                 <div class="enemy-card">
@@ -76,25 +60,11 @@
                   <div id="enemy-crisis-tag" class="crisis-tag">--</div>
                   <img id="enemy-img" src="" alt="Paciente" />
                   <p id="enemy-desc">---</p>
+                  <div id="enemy-reaction" class="enemy-reaction" aria-live="polite"></div>
                   <div class="enemy-combat-stats">
                     HP: <span id="enemy-hp">0</span> | ATK: <span id="enemy-atk">0</span>
                   </div>
                 </div>
-
-                <div class="enemy-intent-slot" id="enemy-intent-zone">
-                  <div class="card-back-label">Mazo Crisis</div>
-                  <img
-                    id="enemy-intent-card"
-                    src="assets/img/cards/reverse.png"
-                    class="enemy-hidden-card"
-                    alt="Intento Enemigo"
-                  />
-                  <div id="enemy-card-announcement" class="card-announcement"></div>
-                </div>
-              </div>
-              <div id="enemy-log" class="enemy-log">
-                <div class="enemy-log-header">Bitácora de Crisis</div>
-                <div id="enemy-log-entries" class="enemy-log-entries"></div>
               </div>
             </div>
           </div>
@@ -109,6 +79,24 @@
         </div>
 
         <footer class="board-footer">
+          <div class="turn-controls-panel">
+            <div class="stat-bubble energy">
+              <span class="label">Acción:</span> <span id="current-energy">3</span>/3
+            </div>
+            <div class="stat-bubble shield">
+              <span class="label">Escudo:</span> +<span id="player-shield">0</span>
+            </div>
+            <button id="end-turn-btn" class="end-turn-button">Terminar Turno</button>
+          </div>
+          <div class="status-panel">
+            <div class="meter-container">
+              <label id="meter-label">Indicador</label>
+              <div class="meter-bar">
+                <div id="main-meter" class="meter-fill"></div>
+              </div>
+              <span id="meter-value">50 / 100</span>
+            </div>
+          </div>
           <div class="player-hand" id="player-hand"></div>
         </footer>
       </section>

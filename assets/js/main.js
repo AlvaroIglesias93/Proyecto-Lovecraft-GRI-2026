@@ -1,4 +1,15 @@
-import { DataManager, PacienteFactory, CombatManager, generarEventoAleatorio, tomarUnTrago, aplicarEfectoEvento, guardarDossier, cargarDossier, limpiarDossier, aplicarDossierACrisis } from "./engine.js";
+import {
+  DataManager,
+  PacienteFactory,
+  CombatManager,
+  generarEventoAleatorio,
+  tomarUnTrago,
+  aplicarEfectoEvento,
+  guardarDossier,
+  cargarDossier,
+  limpiarDossier,
+  aplicarDossierACrisis,
+} from "./engine.js";
 import { MenuUI } from "./ui.js";
 
 let combatManager = null;
@@ -129,6 +140,9 @@ function ejecutarTransicionATablero(personaje, juegoDatos) {
               combatManager.energiaActual + fx.energia_bonus
             );
           }
+          if (fx.efecto_combate) {
+            aplicarEfectoCombateNarrativa(fx.efecto_combate);
+          }
         }
 
         combatManager.actualizarCicloUI();
@@ -136,6 +150,37 @@ function ejecutarTransicionATablero(personaje, juegoDatos) {
         indiceNarrativo++;
       });
     }
+  };
+
+  const aplicarEfectoCombateNarrativa = (efectoCombate) => {
+    if (!combatManager || !efectoCombate) return;
+    const fx = efectoCombate;
+
+    if (fx.tipo === "bloqueo") {
+      combatManager.escudoActual = Math.max(0, combatManager.escudoActual + fx.valor);
+    }
+
+    if (fx.tipo === "reducir_ataque") {
+      combatManager.aplicarDebuff(fx.valor, fx.duracion || 1);
+    }
+
+    if (fx.tipo === "aumentar_ataque") {
+      combatManager.crisisAtkBase = Math.max(0, combatManager.crisisAtkBase + fx.valor);
+      combatManager.recalcularAtk();
+    }
+
+    if (fx.tipo === "robar_cartas") {
+      combatManager.robarCartasDirectas(fx.valor);
+    }
+
+    if (fx.tipo === "daño_crisis") {
+      combatManager.crisisHp = Math.min(
+        combatManager.crisisMaxHp,
+        Math.max(0, combatManager.crisisHp - fx.valor)
+      );
+    }
+
+    combatManager.actualizarCicloUI();
   };
 
   const renderStatsFn = (stats) => {
@@ -146,13 +191,6 @@ function ejecutarTransicionATablero(personaje, juegoDatos) {
     const maxMed = stats.medidorMax || 100;
     document.getElementById("meter-value").textContent = `${stats.medidor} / ${maxMed}`;
     document.getElementById("main-meter").style.width = `${(stats.medidor / maxMed) * 100}%`;
-
-    const avisoCartaEnemiga = document.getElementById("enemy-card-announcement");
-    if (stats.intencionEnemiga) {
-      avisoCartaEnemiga.textContent = `${stats.intencionEnemiga.nombre} (Planificando)`;
-    } else {
-      avisoCartaEnemiga.textContent = "Defensa Activa";
-    }
   };
 
   const onRegistroEnemigo = (registro) => {
@@ -181,7 +219,11 @@ function ejecutarTransicionATablero(personaje, juegoDatos) {
     personaje.id,
     poolDeClase,
     (manoActual, descarteForzado) => {
-      menuUI.dibujarManoCartas(manoActual, (idInstancia) => combatManager.jugarCarta(idInstancia), descarteForzado);
+      menuUI.dibujarManoCartas(
+        manoActual,
+        (idInstancia) => combatManager.jugarCarta(idInstancia),
+        descarteForzado
+      );
     },
     renderStatsFn,
     activarNarrativaAlumno,
@@ -224,11 +266,22 @@ function mostrarDecisionPostCura(personaje, juegoDatos, pacienteFactory) {
     () => {
       const efecto = tomarUnTrago();
       if (combatManager) {
-        const dañoAbsoluto = Math.abs(efecto);
         if (combatManager.personajeId === "enfermero") {
-          combatManager.medidorEstado = Math.min(combatManager.medidorMax, combatManager.medidorEstado + dañoAbsoluto);
+          combatManager.medidorEstado = Math.min(
+            combatManager.medidorMax,
+            Math.max(
+              0,
+              combatManager.medidorEstado + (efecto.buenEfecto ? -efecto.valor : efecto.valor)
+            )
+          );
         } else {
-          combatManager.medidorEstado = Math.max(0, combatManager.medidorEstado - dañoAbsoluto);
+          combatManager.medidorEstado = Math.min(
+            combatManager.medidorMax,
+            Math.max(
+              0,
+              combatManager.medidorEstado + (efecto.buenEfecto ? efecto.valor : -efecto.valor)
+            )
+          );
         }
         combatManager.actualizarCicloUI();
       }
