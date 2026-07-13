@@ -230,9 +230,11 @@ El medidor **persiste entre pacientes**, añadiendo presión estratégica a medi
 
 ---
 
-## Licencia
+## Siguientes Actualizaciones:
 
-[MIT](LICENSE)
+- Mejorar y dejar listo el responsive para todos los dispositivos posibles
+- Usar imágenes de fondo y de cartas sin IA. Hablaremos con diseñadores
+- Funcionalidad de registro y historial de partidas
 
 ---
 
